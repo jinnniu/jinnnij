@@ -1,0 +1,69 @@
+<html lang="en-US ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Full pictures</title>
+        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- 📱 -->
+
+        <div id="navbar">
+            <div class="navbar1" data-aos="zoom-in-right">
+                <a href="index.html">Jinnie Jeong</a>
+            </div>
+            <div class="navbar2" data-aos="zoom-in-left">
+                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
+                <a href="works.html">Works</a>
+            </div>
+        </div>
+        <div id="full">
+            <span id="loading">Loading</span>
+            <div class="picture" data-aos="fade-left">
+                <a href="https://jinnniu.github.io/fullPicture/" target="_blank"><img src="img/web/fullpicture.jpg" alt="screenshot"></a>
+                <a href="https://jinnniu.github.io/fullPicture/" target="_blank">Click</a>
+                <p style="padding-top: 2.3rem; border-top: 0.1rem black solid; margin-top: 14.5rem; margin-bottom: 2rem;">Archive Video</p>
+                
+                <iframe src="https://player.vimeo.com/video/575279230?portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="80%" height="358" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Full Picture"></iframe>
+            </div>
+            <div id="right" data-aos="fade-left">
+                <div class="title">
+                    <span>Full Picture</span>
+                    <ul>
+                        <li style="padding-bottom: 1rem">2020</li>
+                        <li>Coloquium : Narration in Hypermedia and Algorithmic Environments</li>
+                        <li>by Prof.Olia Lialina</li>
+                        <li>Merz-Akademie WS</li>
+                    </ul>
+                </div>
+                <div class="sub">
+                    <p style="margin-bottom: 2rem; text-align: center; font-weight: normal; line-height: 1.5rem;">On the biased sharing and narrow viewpoint</p>
+                    <p>Sometimes, people are inclined to watch only what they want to see.
+                        Moreover, by smartphones, some parts of private issues easily stand out and can be shared on the Internet.
+                        <br>How many parts will match completely between what I think about others and true ones?
+                        To watch them segmentally with their pieces could create a stereotype and makes it impossible to know their real identity.
+                        <br>So this work shows that it might be different from what you thought about something superficially.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1400,
+            });
+
+            $(window).load(function() {
+                $('#loading').hide();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html lang="en-US ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hongik. Art Exhibition 2019</title>
+        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script type="module" src="./js/letterize.min.js"></script>
+        <script type="text/javascript" src="./js/letter.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- 🪞 -->
+
+        <div id="navbar">
+            <div class="navbar1" data-aos="zoom-in-right">
+                <a href="index.html">Jinnie Jeong</a>
+            </div>
+            <div class="navbar2" data-aos="zoom-in-left">
+                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
+                <a href="works.html">Works</a>
+            </div>
+        </div>
+        <div id="art">
+            <span id="loading">Loading</span>
+            <div class="exhibition" data-aos="fade-left">
+                <img class="poster" src="./img/art/art_poster.jpg" alt="poster">
+                <div class="artexh" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                    <p style="margin-bottom: 2rem;">Exhibition</p>
+                    <img class="artexh" src="img/art/exhibition.jpg" alt="exhibition">
+                    <img class="artexh" src="img/art/exhibition_3.jpg" alt="exhibition">
+                </div>
+            
+                <div class="editorial" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                    <p>Art Brochure</p>
+                    <img src="img/art/artbroch.jpg" alt="brochure">
+                </div>
+            </div>
+            <div id="right" data-aos="fade-left">
+                <div class="title">
+                    <span>Exhibition Design <br>&lt; Self-Recommendation &gt;</span>
+                    <ul>
+                        <li style="padding-bottom: 1rem">2019</li>
+                        <li>Hongik Univ. </li>
+                        <li>Designer, College of Art & Design student council</li>
+                    </ul>
+                </div>
+                <div class="sub">
+                    <p style="margin-bottom: 2rem; text-align: center; font-weight: normal; line-height: 1.5rem;">Overall identity design of an annual art festival,<br>College of Art & Design, Hongik Univ.</p>
+                    <p style="padding-bottom: 3rem">The identity of &lt; 2019 Self-Recommendation &gt; exhibition is applied to the display of the exhibition, its posters, leaflets, art brochures, and goods.
+                        The poster reveals its identity, “self-recommendation", visualizing the keywords, “Show off’ and ‘Show' derived from a mirror. Furthermore, it has been intended to express the broad meaning of the exhibition, "society-recommendation" by one of the keywords, “Spread” expressed by “Gradation”.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1400,
+            });
+
+            $(window).load(function() {
+                $('#loading').hide();
+            });
+        </script>
+    </body>
+</html>

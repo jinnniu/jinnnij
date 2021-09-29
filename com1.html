@@ -1,0 +1,74 @@
+<html lang="en-US ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project : Burn Outs</title>
+        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- 🔋 -->
+
+        <div id="navbar">
+            <div class="navbar1" data-aos="zoom-in-right">
+                <a href="index.html">Jinnie Jeong</a>
+            </div>
+            <div class="navbar2" data-aos="zoom-in-left">
+                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
+                <a href="works.html">Works</a>
+            </div>
+        </div>
+        <div id="con2">
+            <span id="loading">Loading</span>
+            <div class="burn" data-aos="fade-left">
+                <div class="burnposter" style="margin-bottom: 13rem;">
+                    <img src="img/com1/communication_poster_1.jpg" alt="posters">
+                    <img src="img/com1/communication_poster_2.jpg" alt="posters">
+                    <img src="img/com1/communication_poster_3.jpg" alt="posters">
+                    <p style="padding-top: 3rem;">Poster Series</p>
+                </div>
+                <div class="burnbooks" style="margin-bottom: 10rem;" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                    <img src="img/com1/book_1.jpg" alt="books">
+                    <img src="img/com1/book_2.jpg" alt="books">
+                    <img src="img/com1/book_3.jpg" alt="books">
+                    <p>Hand-made Book</p>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                    <img class="scene" src="img/com1/scene.jpg" alt="Posters"></img>
+                </div>
+                <!--<img class="scene" src="img/com1/standing_poster.jpg" alt="Posters"></img>-->
+            </div>
+            <div id="right" data-aos="fade-left">
+                <div class="title">
+                    <span>Project : Burn Out</span>
+                    <ul>
+                        <li style="padding-bottom: 1rem">2019</li>
+                        <li>Communication Design2</li>
+                        <li>Project 1</li>
+                    </ul>
+                </div>
+                <div class="sub">
+                    <p style="padding-bottom: 2rem">Each Typography is the words that can be reminiscent of "Burn Out" syndrome, and above them, the detailed sentences of "Look into it", "Try to be got lost" and "Connect the broken parts” are visualized respectively. These sentences are solutions to overcome the "Burn Out" syndrome and operated as Manifesto clues, which are contrasted with the words written on each poster.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1400,
+            });
+
+            $(window).load(function() {
+                $('#loading').hide();
+            });
+        </script>
+    </body>
+</html>
