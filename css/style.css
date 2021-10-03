@@ -33,14 +33,17 @@ a:hover {
 }
 
 #container .con {
+  position: relative;
   mix-blend-mode: multiply;
   display: flex;
   border-left: 1px #0e0e0e solid;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #container .con a {
+  z-index: 10;
   font-size: 1.7rem;
   color: #0e0e0e;
   font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
@@ -49,15 +52,19 @@ a:hover {
 }
 
 #container .con img {
-  position: absolute;
-  bottom: 5%;
-  width: 5%;
   z-index: -1000;
-  opacity: 0;
+  display: none;
+  width: 100%;
+  padding-left: 10%;
+}
+
+#container .con:hover {
+  width: 30rem;
 }
 
 #container .con:hover a {
   color: white;
+  padding-left: 5%;
 }
 
 #container #vertical1:hover {

@@ -42,13 +42,16 @@ a:hover {
 #container {
     
     .con {
+        position: relative;
         mix-blend-mode: multiply;
         display: flex;
         border-left: 1px $mainColor solid; 
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         a {
+            z-index: 10;
             font-size: 1.7rem;
             color: $mainColor;
             font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
@@ -57,18 +60,22 @@ a:hover {
         }
 
         img {
-            position: absolute;
-            bottom : 5%;
-            width: 5%;
+            // position: absolute;
+            // bottom : 5%;
+            // width: 5%;
             z-index: -1000;
-            opacity: 0;
+            display: none;
+            width: 100%;
+            padding-left: 10%;
         }
-        
+    
     }
 
     .con:hover {
+        width: 30rem;
         a {
             color: white;
+            padding-left: 5%;
             // -webkit-text-decoration-line: line-through; /* Safari */
             // text-decoration-line: line-through;
         }
