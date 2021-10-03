@@ -1,0 +1,22 @@
+{
+  "name": "jinnnij",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinnniu/jinnnij.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinnniu/jinnnij/issues"
+  },
+  "homepage": "https://github.com/jinnniu/jinnnij#readme",
+  "dependencies": {
+    "letterizejs": "^2.0.1"
+  }
+}
