@@ -54,12 +54,12 @@ a:hover {
 #container .con img {
   z-index: -1000;
   display: none;
-  width: 100%;
-  padding-left: 10%;
+  width: 90%;
+  padding-left: 5%;
 }
 
 #container .con:hover {
-  width: 30rem;
+  width: 35rem;
 }
 
 #container .con:hover a {
@@ -164,7 +164,7 @@ a:hover {
 }
 
 #navbar a:hover {
-  /*s
+  /*
         color: white;
         text-shadow: 1px 1px 0.5px black, 0 0 3px black, 0 0 10px black, 0 0 18px black;
         */
@@ -449,6 +449,11 @@ a:hover {
   border-left: 1px solid #0e0e0e;
 }
 
+.catego1 ul li:hover, .catego1 .active {
+  background-color: #232323;
+  color: white;
+}
+
 .catego1 .works1 {
   display: block;
 }
@@ -479,6 +484,11 @@ a:hover {
   padding: 1.3rem;
   font-size: 1.3rem;
   border-right: 1px solid #0e0e0e;
+}
+
+.catego2 ul li:hover, .catego2 .active {
+  background-color: #232323;
+  color: white;
 }
 
 .catego2 .works2 {
@@ -1382,10 +1392,6 @@ a:hover {
   cursor: sw-resize;
 }
 
-#raum .raum p {
-  text-decoration-line: line-through;
-}
-
 #raum .raum .raumbook img {
   width: 45%;
 }
@@ -1414,10 +1420,6 @@ a:hover {
 #raum .raum .raumvideo {
   width: 90%;
   margin-bottom: 5rem;
-}
-
-.calendar .description {
-  text-decoration-line: line-through;
 }
 
 .calendar img {

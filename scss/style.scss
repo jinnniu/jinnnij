@@ -65,14 +65,14 @@ a:hover {
             // width: 5%;
             z-index: -1000;
             display: none;
-            width: 100%;
-            padding-left: 10%;
+            width: 90%;
+            padding-left: 5%;
         }
     
     }
 
     .con:hover {
-        width: 30rem;
+        width: 35rem;
         a {
             color: white;
             padding-left: 5%;
@@ -180,7 +180,7 @@ a:hover {
     }
 
     a:hover {
-        /*s
+        /*
         color: white;
         text-shadow: 1px 1px 0.5px black, 0 0 3px black, 0 0 10px black, 0 0 18px black;
         */
@@ -419,6 +419,8 @@ a:hover {
         }
     }
     ul li:hover, .active {
+        background-color: #232323;
+        color: white;
         // -webkit-text-decoration-line: line-through; /* Safari */
         // text-decoration-line: line-through;
     }
@@ -453,6 +455,8 @@ a:hover {
         }
     }
     ul li:hover, .active {
+        background-color: #232323;
+        color: white;
         // -webkit-text-decoration-line: line-through; /* Safari */
         // text-decoration-line: line-through;
     }
@@ -1483,8 +1487,8 @@ a:hover {
 
     .raum {
         p {
-            -webkit-text-decoration-line: line-through;
-            text-decoration-line: line-through; 
+            // -webkit-text-decoration-line: line-through;
+            // text-decoration-line: line-through; 
         }
 
         .raumbook img{  
@@ -1530,8 +1534,8 @@ a:hover {
     }
 
     .description {
-        -webkit-text-decoration-line: line-through; 
-        text-decoration-line: line-through; 
+        // -webkit-text-decoration-line: line-through; 
+        // text-decoration-line: line-through; 
     }
 
     img {
