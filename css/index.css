@@ -1,16 +1,18 @@
-/* Font */
-@font-face {
-  font-family: 'syncopatebold';
-  src: url("../font/syncopate-bold-webfont.woff2") format("woff2"), url("../font/syncopate-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+/* Elements */
+/* General CSS */
+html {
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
 }
 
-@font-face {
-  font-family: 'syncopateregular';
-  src: url("../font/syncopate-regular-webfont.woff2") format("woff2"), url("../font/syncopate-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 ul {
@@ -30,6 +32,24 @@ a:hover {
 ::selection {
   background-color: #0e0e0e;
   color: white;
+}
+
+#loading {
+  text-decoration-line: line-through;
+  font-size: 1.8rem;
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  margin-top: 10rem;
+  left: 45%;
+  position: absolute;
+}
+
+#container {
+  top: 0;
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 1fr;
 }
 
 #container .con {
@@ -150,11 +170,16 @@ a:hover {
 #horizontal {
   position: absolute;
   z-index: -1000;
-  width: 100%;
+  width: 110%;
   height: 100%;
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
+}
+
+#horizontal div {
+  border-top: 0.14rem black solid;
+  opacity: 0;
 }
 
 #navbar {
@@ -171,6 +196,8 @@ a:hover {
   background-color: white;
   z-index: 100;
   border-bottom: 1px black solid;
+  font-size: 1.5rem;
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
 }
 
 #navbar a {
@@ -188,23 +215,49 @@ a:hover {
   text-decoration-line: line-through;
 }
 
-#cv #me {
-  padding-top: 11rem;
-  font-weight: lighter;
+.containerInfo {
+  height: 100%;
 }
 
-#cv #me p {
-  font-size: 1.1rem;
-  line-height: 2.1rem;
-}
-
-#cv #me .insideme {
-  overflow-y: scroll;
+.containerInfo #cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  font-family: Helvetica, sans-serif;
+  height: 100%;
   -ms-overflow-style: none;
   /* for Internet Explorer, Edge */
   scrollbar-width: none;
   /* for Firefox */
   overflow-y: scroll;
+}
+
+.containerInfo #cv #portrait {
+  display: grid;
+  grid-template-columns: repeat(51, 1fr);
+  grid-template-rows: repeat(51, 1fr);
+  gap: 0;
+  width: 39rem;
+  height: 39rem;
+  margin: 11rem 1rem 5rem 7rem;
+}
+
+.containerInfo #cv #me {
+  font-weight: lighter;
+}
+
+.containerInfo #cv #me p {
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+}
+
+.containerInfo #cv #me .insideme {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
   padding: 2.3rem;
   width: 80%;
   height: 30rem;
@@ -212,11 +265,11 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-#cv #me .insideme li {
+.containerInfo #cv #me .insideme li {
   line-height: 2rem;
 }
 
-#cv #me .insideme::-webkit-scrollbar {
+.containerInfo #cv #me .insideme::-webkit-scrollbar {
   display: none;
 }
 
@@ -403,6 +456,36 @@ a:hover {
   }
 }
 
+#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+  display: grid;
+  grid-template-columns: 0.9fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 9rem;
+  padding-left: 1%;
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+}
+
+.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 0.7rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+
+.sub {
+  margin-top: 2rem;
+  padding: 2.1rem;
+  font-size: 0.93rem;
+  line-height: 2.1rem;
+}
+
 .sub a {
   color: black;
   font-weight: normal;
@@ -434,6 +517,21 @@ a:hover {
   padding-bottom: 0.5rem;
 }
 
+#right {
+  border-left: 0.1rem black solid;
+  background-color: white;
+  position: relative;
+  overflow-y: hidden;
+  width: 31%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-top: 0rem;
+  padding: 7.7rem 1.4rem 0 1.4rem;
+}
+
 #right p {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -452,11 +550,28 @@ a:hover {
   color: white;
 }
 
-.catego1 {
+#categorize {
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  display: grid;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  margin-top: 4.3rem;
+  width: 100%;
+  height: 130%;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+}
+
+#categorize .catego1 {
   border-right: 1px solid #0e0e0e;
 }
 
-.catego1 ul {
+#categorize .catego1 ul {
   display: flex;
   margin: 0;
   list-style: none;
@@ -464,36 +579,36 @@ a:hover {
   border-bottom: 1px solid #0e0e0e;
 }
 
-.catego1 ul li {
+#categorize .catego1 ul li {
   padding: 1.3rem;
   font-size: 1.3rem;
   border-left: 1px solid #0e0e0e;
 }
 
-.catego1 ul li:hover, .catego1 .active {
+#categorize .catego1 ul li:hover, #categorize .catego1 .active {
   /* Safari */
   text-decoration-line: line-through;
 }
 
-.catego1 .works1 {
+#categorize .catego1 .works1 {
   display: block;
 }
 
-.catego1 .works1 .w2019.w2020.w2021.etc1 {
+#categorize .catego1 .works1 .w2019.w2020.w2021.etc1 {
   transition-timing-function: ease 1s;
 }
 
-.catego1 .works1 .mine {
+#categorize .catego1 .works1 .mine {
   font-size: 1.1rem;
   padding: 1.4rem;
   border-bottom: 1px solid #0e0e0e;
 }
 
-.catego2 {
+#categorize .catego2 {
   width: 100%;
 }
 
-.catego2 ul {
+#categorize .catego2 ul {
   display: flex;
   margin: 0;
   list-style: none;
@@ -501,26 +616,26 @@ a:hover {
   border-bottom: 1px solid #0e0e0e;
 }
 
-.catego2 ul li {
+#categorize .catego2 ul li {
   padding: 1.3rem;
   font-size: 1.3rem;
   border-right: 1px solid #0e0e0e;
 }
 
-.catego2 ul li:hover, .catego2 .active {
+#categorize .catego2 ul li:hover, #categorize .catego2 .active {
   /* Safari */
   text-decoration-line: line-through;
 }
 
-.catego2 .works2 {
+#categorize .catego2 .works2 {
   display: block;
 }
 
-.catego2 .works2 .graphic.edit.website.etc2 {
+#categorize .catego2 .works2 .graphic.edit.website.etc2 {
   transition-timing-function: ease 1s;
 }
 
-.catego2 .works2 .mine {
+#categorize .catego2 .works2 .mine {
   font-size: 1.1rem;
   padding: 1.4rem;
   border-bottom: 1px solid #0e0e0e;
@@ -1515,20 +1630,67 @@ a:hover {
   width: 50rem;
 }
 
-/* Variables */
 /* Start Media Query */
-@media (min-width: 211px) and (max-width: 760px) {
+@media (min-width: 210px) and (max-width: 760px) {
   /* For mobile phones: */
   html {
-    font-size: 11px;
+    font-size: 10px;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  p, li {
+  #container {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+    top: 3.9rem;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: 1fr;
+  }
+  #container .con {
+    border-left: 0;
+    border-bottom: 1px #0e0e0e solid;
+  }
+  #container .con a {
+    writing-mode: horizontal-tb;
+  }
+  #container .con:hover {
+    width: 100%;
+  }
+  #container .con:hover .sideimage img {
+    display: none;
+  }
+  #container .con:hover .subdec {
+    display: inline;
+  }
+  #horizontal {
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #horizontal div {
+    border-right: 0.14rem black solid;
+    opacity: 0;
+  }
+  p {
+    font-size: 1.3rem;
     text-align: center;
   }
-  #right {
+  li {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #loading {
+    left: 37%;
+  }
+  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+  #con1 #right, #con2 #right, #ty1 #right, #ty2 #right, #three #right, #art #right, #jump #right, #full #right, #so1 #right, #so2 #right, #webzine #right, #real #right, #type #right, #oneday #right, #seoul50 #right, #raum #right, #calendiary #right, #empathy #right {
     position: relative;
     bottom: 0;
     border-left: 0;
@@ -1538,11 +1700,34 @@ a:hover {
     padding: 3rem 0 0 0;
     height: 50rem;
   }
-  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
-    display: block;
+  .containerInfo #cv {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding: 0;
+    gap: 0;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  .containerInfo #cv #portrait {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 14%;
+  }
+  .containerInfo #cv #me {
+    height: 80rem;
+    padding-top: 0;
+  }
+  .containerInfo #cv #me .insideme {
+    width: 70%;
+    height: 59rem;
+    margin: 0 auto;
+  }
+  #loading {
+    left: 37%;
   }
   #categorize {
     display: block;
@@ -1554,18 +1739,6 @@ a:hover {
   }
   #categorize ul li {
     padding: 1rem;
-  }
-  .containerInfo #cv #portrait {
-    width: 20rem;
-    height: 20rem;
-  }
-  .containerInfo #cv #me {
-    height: 53rem;
-  }
-  .containerInfo #cv #me .insideme {
-    width: 70%;
-    height: 43rem;
-    margin: 0 auto;
   }
   .ai .linking .linkimg {
     margin-left: 0.5rem;
@@ -1588,6 +1761,115 @@ a:hover {
   body {
     -ms-overflow-style: none;
     /* IE and Edge */
+  }
+  #container {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+    top: 3.9rem;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: 1fr;
+  }
+  #container .con {
+    border-left: 0;
+    border-bottom: 1px #0e0e0e solid;
+  }
+  #container .con a {
+    writing-mode: horizontal-tb;
+  }
+  #container .con:hover {
+    width: 100%;
+  }
+  #container .con:hover .sideimage img {
+    display: none;
+  }
+  #container .con:hover .subdec {
+    display: inline;
+  }
+  #horizontal {
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #horizontal div {
+    border-right: 0.14rem black solid;
+    opacity: 0;
+  }
+  p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  li {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #loading {
+    left: 37%;
+  }
+  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+  #con1 #right, #con2 #right, #ty1 #right, #ty2 #right, #three #right, #art #right, #jump #right, #full #right, #so1 #right, #so2 #right, #webzine #right, #real #right, #type #right, #oneday #right, #seoul50 #right, #raum #right, #calendiary #right, #empathy #right {
+    position: relative;
+    bottom: 0;
+    border-left: 0;
+    border-top: 0.05rem solid black;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 3rem 0 0 0;
+    height: 50rem;
+  }
+  .containerInfo .colorful {
+    display: none;
+  }
+  .containerInfo .copyright {
+    mix-blend-mode: normal;
+  }
+  .containerInfo #cv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  .containerInfo #cv #portrait {
+    position: relative;
+    margin: 0 auto;
+    padding-right: 3rem;
+    padding-top: 10rem;
+  }
+  .containerInfo #cv #me {
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    z-index: -10;
+    margin-right: 0px;
+    height: 50rem;
+  }
+  .containerInfo #cv #me .insideme {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    height: 63rem;
+    margin: 0 auto;
+  }
+  #categorize {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  #categorize .catego1 {
+    border: none;
+  }
+  #categorize ul li {
+    padding: 1rem;
   }
   .ai .linking .linkimg {
     margin-left: 0.6rem;
@@ -1633,7 +1915,12 @@ a:hover {
     height: 50rem;
   }
   .containerInfo #cv #me .insideme {
-    height: 42rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    height: 63rem;
     margin: 0 auto;
   }
   .ai .linking .linkimg {
@@ -1651,12 +1938,12 @@ a:hover {
 }
 
 @media (min-width: 1701px) and (max-width: 2000px) {
-  #portrait {
-    margin-top: 25%;
-    margin-left: 20%;
+  .containerInfo #cv #portrait {
+    margin-top: 30%;
+    margin-left: 10%;
   }
-  #me {
-    margin-top: 10%;
+  .containerInfo #cv #me {
+    margin-top: 30%;
   }
   .ai .screenshot .gif {
     width: 55rem;
@@ -1670,12 +1957,12 @@ a:hover {
     margin: 0;
     padding: 0;
   }
-  #portrait {
-    margin-top: 37%;
-    margin-left: 20%;
+  .containerInfo #cv #portrait {
+    margin-top: 25%;
+    margin-left: 10%;
   }
-  #me {
-    margin-top: 23%;
+  .containerInfo #cv #me {
+    margin-top: 25%;
   }
   .ai .screenshot .gif {
     width: 60rem;
@@ -1695,135 +1982,5 @@ a:hover {
   src: url("../font/syncopate-regular-webfont.woff2") format("woff2"), url("../font/syncopate-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
-
-/* General CSS */
-html {
-  font-size: 15px;
-  -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
-  /* for Firefox */
-  overflow-y: scroll;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-#loading {
-  text-decoration-line: line-through;
-  font-size: 1.8rem;
-  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
-  margin-top: 10rem;
-  left: 45%;
-  position: absolute;
-}
-
-#container {
-  top: 0;
-  position: relative;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 1fr;
-}
-
-#navbar {
-  font-size: 1.5rem;
-  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
-}
-
-#right {
-  border-left: 0.1rem black solid;
-  background-color: white;
-  position: relative;
-  overflow-y: hidden;
-  width: 31%;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  margin-top: 0rem;
-  padding: 7.7rem 1.4rem 0 1.4rem;
-}
-
-.sub {
-  margin-top: 2rem;
-  padding: 2.1rem;
-  font-size: 0.93rem;
-  line-height: 2.1rem;
-}
-
-#categorize {
-  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
-  display: grid;
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0;
-  margin-top: 4.3rem;
-  width: 100%;
-  height: 130%;
-  -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
-  /* for Firefox */
-  overflow-y: scroll;
-}
-
-.containerInfo {
-  height: 100%;
-}
-
-#cv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0;
-  font-family: Helvetica, sans-serif;
-  height: 100%;
-  -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
-  /* for Firefox */
-  overflow-y: scroll;
-}
-
-#portrait {
-  display: grid;
-  grid-template-columns: repeat(51, 1fr);
-  grid-template-rows: repeat(51, 1fr);
-  gap: 0;
-  width: 39rem;
-  height: 39rem;
-  margin: 11rem 1rem 5rem 7rem;
-}
-
-#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
-  display: grid;
-  grid-template-columns: 0.9fr 0.5fr;
-  grid-template-rows: 1fr;
-  gap: 0;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 9rem;
-  padding-left: 1%;
-  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
-}
-
-.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
-  display: flex;
-  position: relative;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  padding-top: 0.7rem;
-  letter-spacing: 0.1rem;
-  word-spacing: 0.1rem;
 }
 /*# sourceMappingURL=index.css.map */

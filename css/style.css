@@ -1,16 +1,17 @@
-/* Font */
-@font-face {
-  font-family: 'syncopatebold';
-  src: url("../font/syncopate-bold-webfont.woff2") format("woff2"), url("../font/syncopate-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+/* General CSS */
+html {
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
 }
 
-@font-face {
-  font-family: 'syncopateregular';
-  src: url("../font/syncopate-regular-webfont.woff2") format("woff2"), url("../font/syncopate-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 ul {
@@ -30,6 +31,24 @@ a:hover {
 ::selection {
   background-color: #0e0e0e;
   color: white;
+}
+
+#loading {
+  text-decoration-line: line-through;
+  font-size: 1.8rem;
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  margin-top: 10rem;
+  left: 45%;
+  position: absolute;
+}
+
+#container {
+  top: 0;
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 1fr;
 }
 
 #container .con {
@@ -150,11 +169,16 @@ a:hover {
 #horizontal {
   position: absolute;
   z-index: -1000;
-  width: 100%;
+  width: 110%;
   height: 100%;
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
+}
+
+#horizontal div {
+  border-top: 0.14rem black solid;
+  opacity: 0;
 }
 
 #navbar {
@@ -171,6 +195,8 @@ a:hover {
   background-color: white;
   z-index: 100;
   border-bottom: 1px black solid;
+  font-size: 1.5rem;
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
 }
 
 #navbar a {
@@ -188,23 +214,49 @@ a:hover {
   text-decoration-line: line-through;
 }
 
-#cv #me {
-  padding-top: 11rem;
-  font-weight: lighter;
+.containerInfo {
+  height: 100%;
 }
 
-#cv #me p {
-  font-size: 1.1rem;
-  line-height: 2.1rem;
-}
-
-#cv #me .insideme {
-  overflow-y: scroll;
+.containerInfo #cv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  font-family: Helvetica, sans-serif;
+  height: 100%;
   -ms-overflow-style: none;
   /* for Internet Explorer, Edge */
   scrollbar-width: none;
   /* for Firefox */
   overflow-y: scroll;
+}
+
+.containerInfo #cv #portrait {
+  display: grid;
+  grid-template-columns: repeat(51, 1fr);
+  grid-template-rows: repeat(51, 1fr);
+  gap: 0;
+  width: 39rem;
+  height: 39rem;
+  margin: 11rem 1rem 5rem 7rem;
+}
+
+.containerInfo #cv #me {
+  font-weight: lighter;
+}
+
+.containerInfo #cv #me p {
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+}
+
+.containerInfo #cv #me .insideme {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
   padding: 2.3rem;
   width: 80%;
   height: 30rem;
@@ -212,11 +264,11 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-#cv #me .insideme li {
+.containerInfo #cv #me .insideme li {
   line-height: 2rem;
 }
 
-#cv #me .insideme::-webkit-scrollbar {
+.containerInfo #cv #me .insideme::-webkit-scrollbar {
   display: none;
 }
 
@@ -403,6 +455,36 @@ a:hover {
   }
 }
 
+#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+  display: grid;
+  grid-template-columns: 0.9fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 9rem;
+  padding-left: 1%;
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+}
+
+.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 0.7rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+}
+
+.sub {
+  margin-top: 2rem;
+  padding: 2.1rem;
+  font-size: 0.93rem;
+  line-height: 2.1rem;
+}
+
 .sub a {
   color: black;
   font-weight: normal;
@@ -434,6 +516,21 @@ a:hover {
   padding-bottom: 0.5rem;
 }
 
+#right {
+  border-left: 0.1rem black solid;
+  background-color: white;
+  position: relative;
+  overflow-y: hidden;
+  width: 31%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  margin-top: 0rem;
+  padding: 7.7rem 1.4rem 0 1.4rem;
+}
+
 #right p {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -452,11 +549,28 @@ a:hover {
   color: white;
 }
 
-.catego1 {
+#categorize {
+  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  display: grid;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
+  margin-top: 4.3rem;
+  width: 100%;
+  height: 130%;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+}
+
+#categorize .catego1 {
   border-right: 1px solid #0e0e0e;
 }
 
-.catego1 ul {
+#categorize .catego1 ul {
   display: flex;
   margin: 0;
   list-style: none;
@@ -464,36 +578,36 @@ a:hover {
   border-bottom: 1px solid #0e0e0e;
 }
 
-.catego1 ul li {
+#categorize .catego1 ul li {
   padding: 1.3rem;
   font-size: 1.3rem;
   border-left: 1px solid #0e0e0e;
 }
 
-.catego1 ul li:hover, .catego1 .active {
+#categorize .catego1 ul li:hover, #categorize .catego1 .active {
   /* Safari */
   text-decoration-line: line-through;
 }
 
-.catego1 .works1 {
+#categorize .catego1 .works1 {
   display: block;
 }
 
-.catego1 .works1 .w2019.w2020.w2021.etc1 {
+#categorize .catego1 .works1 .w2019.w2020.w2021.etc1 {
   transition-timing-function: ease 1s;
 }
 
-.catego1 .works1 .mine {
+#categorize .catego1 .works1 .mine {
   font-size: 1.1rem;
   padding: 1.4rem;
   border-bottom: 1px solid #0e0e0e;
 }
 
-.catego2 {
+#categorize .catego2 {
   width: 100%;
 }
 
-.catego2 ul {
+#categorize .catego2 ul {
   display: flex;
   margin: 0;
   list-style: none;
@@ -501,26 +615,26 @@ a:hover {
   border-bottom: 1px solid #0e0e0e;
 }
 
-.catego2 ul li {
+#categorize .catego2 ul li {
   padding: 1.3rem;
   font-size: 1.3rem;
   border-right: 1px solid #0e0e0e;
 }
 
-.catego2 ul li:hover, .catego2 .active {
+#categorize .catego2 ul li:hover, #categorize .catego2 .active {
   /* Safari */
   text-decoration-line: line-through;
 }
 
-.catego2 .works2 {
+#categorize .catego2 .works2 {
   display: block;
 }
 
-.catego2 .works2 .graphic.edit.website.etc2 {
+#categorize .catego2 .works2 .graphic.edit.website.etc2 {
   transition-timing-function: ease 1s;
 }
 
-.catego2 .works2 .mine {
+#categorize .catego2 .works2 .mine {
   font-size: 1.1rem;
   padding: 1.4rem;
   border-bottom: 1px solid #0e0e0e;
