@@ -1,0 +1,15 @@
+/* Font */
+@font-face {
+  font-family: 'syncopatebold';
+  src: url("../font/syncopate-bold-webfont.woff2") format("woff2"), url("../font/syncopate-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'syncopateregular';
+  src: url("../font/syncopate-regular-webfont.woff2") format("woff2"), url("../font/syncopate-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=font.css.map */
