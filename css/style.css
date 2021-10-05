@@ -46,25 +46,41 @@ a:hover {
   z-index: 10;
   font-size: 1.7rem;
   color: #0e0e0e;
-  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  font-family: "syncopateregular", "Syncopate", Helvetica, sans-serif;
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
 
-#container .con img {
+#container .con .sideimage {
   z-index: -1000;
   display: none;
-  width: 90%;
-  padding-left: 5%;
+}
+
+#container .con .sideimage img {
+  width: 39rem;
+  padding-top: 10%;
+  padding-right: 5%;
+}
+
+#container .con .sideimage img.verticalimg {
+  width: 28rem;
+}
+
+#container .con .sideimage .subdec {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  font-family: "syncopateregular", "Syncopate", Helvetica, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 #container .con:hover {
-  width: 35rem;
+  width: 43rem;
 }
 
 #container .con:hover a {
   color: white;
-  padding-left: 5%;
+  display: none;
 }
 
 #container #vertical1:hover {
@@ -112,11 +128,11 @@ a:hover {
 }
 
 #container #vertical12:hover {
-  background-color: #aaea75;
+  background-color: #99d766;
 }
 
 #container #vertical13:hover {
-  background-color: #ef5252;
+  background-color: #3537a5;
 }
 
 #container #vertical14:hover {
@@ -168,6 +184,8 @@ a:hover {
         color: white;
         text-shadow: 1px 1px 0.5px black, 0 0 3px black, 0 0 10px black, 0 0 18px black;
         */
+  /* Safari */
+  text-decoration-line: line-through;
 }
 
 #cv #me {
@@ -183,7 +201,10 @@ a:hover {
 #cv #me .insideme {
   overflow-y: scroll;
   -ms-overflow-style: none;
-  /* IE and Edge */
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
   padding: 2.3rem;
   width: 80%;
   height: 30rem;
@@ -407,7 +428,7 @@ a:hover {
 .title span {
   font-size: 1.4rem;
   margin-top: 0.7rem;
-  font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  font-family: "syncopateregular", "Syncopate", Helvetica, sans-serif;
   font-weight: 300;
   line-height: 2.8rem;
   padding-bottom: 0.5rem;
@@ -450,8 +471,8 @@ a:hover {
 }
 
 .catego1 ul li:hover, .catego1 .active {
-  background-color: #232323;
-  color: white;
+  /* Safari */
+  text-decoration-line: line-through;
 }
 
 .catego1 .works1 {
@@ -487,8 +508,8 @@ a:hover {
 }
 
 .catego2 ul li:hover, .catego2 .active {
-  background-color: #232323;
-  color: white;
+  /* Safari */
+  text-decoration-line: line-through;
 }
 
 .catego2 .works2 {

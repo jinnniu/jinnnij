@@ -18,6 +18,8 @@ $bookback: #a7a7a7;
     font-style: normal;
 }
 
+$mainFont : 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+
 
 ul {
     list-style: none;
@@ -54,28 +56,43 @@ a:hover {
             z-index: 10;
             font-size: 1.7rem;
             color: $mainColor;
-            font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+            font-family: $mainFont;
             writing-mode: vertical-rl;
             text-orientation: mixed;
         }
 
-        img {
-            // position: absolute;
-            // bottom : 5%;
-            // width: 5%;
+        .sideimage {
             z-index: -1000;
             display: none;
-            width: 90%;
-            padding-left: 5%;
+
+            img {
+                // position: absolute;
+                // bottom : 5%;
+                // width: 5%;
+                width: 39rem;
+                padding-top: 10%;
+                padding-right: 5%;
+            }
+
+            img.verticalimg {
+                width: 28rem;
+            }
+
+            .subdec {
+                margin-top: 3rem;
+                font-size: 0.9rem;
+                font-family: $mainFont;
+                color: white;
+                text-align: center;
+            }
         }
-    
     }
 
     .con:hover {
-        width: 35rem;
+        width: 43rem;
         a {
             color: white;
-            padding-left: 5%;
+            display: none;
             // -webkit-text-decoration-line: line-through; /* Safari */
             // text-decoration-line: line-through;
         }
@@ -126,11 +143,11 @@ a:hover {
     }
 
     #vertical12:hover {
-        background-color: #aaea75;
+        background-color: #99d766;
     }
 
     #vertical13:hover {
-        background-color: #ef5252;
+        background-color: #3537a5;
     }
 
     #vertical14:hover {
@@ -184,8 +201,8 @@ a:hover {
         color: white;
         text-shadow: 1px 1px 0.5px black, 0 0 3px black, 0 0 10px black, 0 0 18px black;
         */
-        // -webkit-text-decoration-line: line-through; /* Safari */
-        // text-decoration-line: line-through;
+        -webkit-text-decoration-line: line-through; /* Safari */
+        text-decoration-line: line-through;
     }
 
 }
@@ -204,7 +221,9 @@ a:hover {
 
         .insideme {
             overflow-y: scroll;
-            -ms-overflow-style: none;  /* IE and Edge */
+            -ms-overflow-style: none; /* for Internet Explorer, Edge */
+            scrollbar-width: none; /* for Firefox */
+            overflow-y: scroll;
             padding : 2.3rem;
             width: 80%;
             height: 30rem;
@@ -376,7 +395,7 @@ a:hover {
     span {
         font-size: 1.4rem;
         margin-top: 0.7rem;
-        font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+        font-family: $mainFont;
         font-weight: 300;
         line-height: 2.8rem;
         padding-bottom: 0.5rem;
@@ -419,10 +438,10 @@ a:hover {
         }
     }
     ul li:hover, .active {
-        background-color: #232323;
-        color: white;
-        // -webkit-text-decoration-line: line-through; /* Safari */
-        // text-decoration-line: line-through;
+        // background-color: #232323;
+        // color: white;
+        -webkit-text-decoration-line: line-through; /* Safari */
+        text-decoration-line: line-through;
     }
 
     .works1 {
@@ -455,10 +474,10 @@ a:hover {
         }
     }
     ul li:hover, .active {
-        background-color: #232323;
-        color: white;
-        // -webkit-text-decoration-line: line-through; /* Safari */
-        // text-decoration-line: line-through;
+        // background-color: #232323;
+        // color: white;
+        -webkit-text-decoration-line: line-through; /* Safari */
+        text-decoration-line: line-through;
     }
     .works2 {
         display: block;
