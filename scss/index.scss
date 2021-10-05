@@ -1,0 +1,150 @@
+@import "style.scss";
+@import "include-media.scss";
+@import "media.scss";
+
+
+/* Font */
+
+@font-face {
+    font-family: 'syncopatebold';
+    src: url('../font/syncopate-bold-webfont.woff2') format('woff2'),
+        url('../font/syncopate-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'syncopateregular';
+    src: url('../font/syncopate-regular-webfont.woff2') format('woff2'),
+        url('../font/syncopate-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* General CSS */
+html {
+    font-size: 15px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#loading {
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    font-size: 1.8rem;
+    font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+    margin-top: 10rem;
+    left: 45%;
+    position: absolute;
+}
+
+#container {
+    top: 0;
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#navbar {
+    font-size: 1.5rem;
+    font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+}
+
+#right {
+    border-left: 0.1rem black solid;
+    background-color: white;
+    position: relative;
+    overflow-y: hidden;
+    width: 31%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin-top: 0rem;
+    padding: 7.7rem 1.4rem 0 1.4rem;
+}
+
+.sub{
+    margin-top: 2rem;
+    padding: 2.1rem;
+    font-size: 0.93rem;
+    line-height: 2.1rem;
+}
+
+#categorize {
+    font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    margin-top: 4.3rem;
+    width: 100%;
+    height: 130%;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+
+.containerInfo {
+    height: 100%;
+}
+
+#cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+
+#portrait {
+    display: grid;
+    grid-template-columns: repeat(51, 1fr);
+    grid-template-rows: repeat(51, 1fr);
+    gap: 0;
+    width: 39rem;
+    height: 39rem;
+    margin: 11rem 1rem 5rem 7rem;
+}
+
+#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+    display: grid;
+    grid-template-columns: 0.9fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 9rem;
+    padding-left: 1%;
+    font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+}
+
+.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    -webkit-flex-direction: column; 
+    flex-direction: column;
+    padding-top: 0.7rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
