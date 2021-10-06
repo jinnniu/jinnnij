@@ -11,9 +11,11 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
     /* For mobile phones: */
     html {
         font-size: 10px;
-        overflow-x: hidden;
+        overflow: hidden;
         margin: 0;
         padding: 0;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
     }
 
     // Index.html
@@ -143,12 +145,12 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
     
     .containerInfo #cv{
         #portrait {
-            margin-top: 30%;
+            margin-top: 23%;
             margin-left: 10%;
         }
     
         #me {
-            margin-top: 30%;
+            margin-top: 23%;
         }
     }
 
@@ -167,12 +169,12 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
 
     .containerInfo #cv{
         #portrait {
-            margin-top: 25%;
+            margin-top: 20%;
             margin-left: 10%;
         }
     
         #me {
-            margin-top: 25%;
+            margin-top: 20%;
         }
     }
 

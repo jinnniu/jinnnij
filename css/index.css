@@ -25,7 +25,7 @@ html {
   /* for Internet Explorer, Edge */
   scrollbar-width: none;
   /* for Firefox */
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 body {
@@ -190,7 +190,7 @@ a:hover {
 #horizontal {
   position: absolute;
   z-index: -1000;
-  width: 110%;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1655,16 +1655,19 @@ a:hover {
   /* For mobile phones: */
   html {
     font-size: 10px;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
   }
   #container {
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
     scrollbar-width: none;
     /* for Firefox */
-    overflow-y: scroll;
     top: 3.9rem;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: 1fr;
@@ -1787,7 +1790,6 @@ a:hover {
     /* for Internet Explorer, Edge */
     scrollbar-width: none;
     /* for Firefox */
-    overflow-y: scroll;
     top: 3.9rem;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: 1fr;
@@ -1959,11 +1961,11 @@ a:hover {
 
 @media (min-width: 1701px) and (max-width: 2000px) {
   .containerInfo #cv #portrait {
-    margin-top: 30%;
+    margin-top: 23%;
     margin-left: 10%;
   }
   .containerInfo #cv #me {
-    margin-top: 30%;
+    margin-top: 23%;
   }
   .ai .screenshot .gif {
     width: 55rem;
@@ -1978,11 +1980,11 @@ a:hover {
     padding: 0;
   }
   .containerInfo #cv #portrait {
-    margin-top: 25%;
+    margin-top: 20%;
     margin-left: 10%;
   }
   .containerInfo #cv #me {
-    margin-top: 25%;
+    margin-top: 20%;
   }
   .ai .screenshot .gif {
     width: 60rem;
