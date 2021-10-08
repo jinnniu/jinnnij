@@ -1,0 +1,42 @@
+.calendar {
+
+    img {
+        box-shadow: 0px 0px 7px black;
+    }
+
+    .manual img{
+        height: 29rem;
+        box-shadow: none;
+        margin: 0.3rem;
+    }
+
+    .content1 {
+        width: 35rem;
+        height: 37rem;
+        background-color: white;
+    }
+    
+    .display-container:hover {
+        display:block
+    }
+    .slide1 {
+        display: none;
+        width: 25rem;
+        margin-top: 3rem;
+        margin-left: 15%;
+    }
+    .button {
+        cursor: pointer;
+        border:none;
+        display:inline-block;
+        padding:1rem 1.4rem;
+        margin-top: 2.3rem;
+        vertical-align:middle;
+        overflow:hidden;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        white-space:nowrap;
+        color: black;
+    }
+}

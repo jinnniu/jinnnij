@@ -1,0 +1,91 @@
+// Work page : category
+#categorize {
+    font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    margin-top: 4.3rem;
+    width: 100%;
+    height: 130%;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+
+    .works-link:hover {
+        background-color: #232323;
+        a {color: white;}
+    }
+
+    .catego1{
+        border-right: 1px solid $mainColor;
+        ul {
+            display: flex;
+            margin: 0;
+            list-style: none;
+            text-transform: uppercase;
+            border-bottom: 1px solid $mainColor;
+            li {
+                padding: 1.3rem;
+                font-size: 1.3rem;
+                border-left: 1px solid $mainColor;
+            }
+        }
+        ul li:hover, .active {
+            // background-color: #232323;
+            // color: white;
+            -webkit-text-decoration-line: line-through; /* Safari */
+            text-decoration-line: line-through;
+        }
+
+        .works1 {
+            display: block;
+        
+            .w2019.w2020.w2021.etc1 {
+                transition-timing-function: ease 1s;
+            }
+
+            .works-link {
+                font-size: 1.1rem;
+                padding: 1.4rem;
+                border-bottom: 1px solid $mainColor;
+            }
+        }
+    }
+
+    .catego2{
+        width: 100%;
+        ul {
+            display: flex;
+            margin: 0;
+            list-style: none;
+            text-transform: uppercase;
+            border-bottom: 1px solid $mainColor;
+            li {
+                padding: 1.3rem;
+                font-size: 1.3rem;
+                border-right: 1px solid $mainColor;
+            }
+        }
+        ul li:hover, .active {
+            // background-color: #232323;
+            // color: white;
+            -webkit-text-decoration-line: line-through; /* Safari */
+            text-decoration-line: line-through;
+        }
+        .works2 {
+            display: block;
+
+            .graphic.edit.website.etc2 {
+                transition-timing-function: ease 1s;
+            }
+            
+            .works-link {
+                font-size: 1.1rem;
+                padding: 1.4rem;
+                border-bottom: 1px solid $mainColor;
+            }
+        }
+    }
+}

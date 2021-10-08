@@ -1,0 +1,125 @@
+.colorful {
+    position: absolute;
+    top: 0;
+    margin-top: 7rem;
+    width: 100%;
+    height: 80%;
+    z-index: -100;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(14, 1fr);
+    visibility: hidden;
+
+    div {
+        width: 30%;
+    }
+    
+    .color1{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 1s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color2{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 1.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color3{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 2s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color4{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 2.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color5{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 3s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color6{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 3.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color7{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 4s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color8{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 4.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color9{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color10{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 4.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color11{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 4s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color12{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 3.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color13{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 3s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+    .color14{
+        animation-name: colors; -webkit-animation-name: colors; -moz-animation-name: colors; -o-animation-name: colors;
+        position: relative;
+        animation: colors 2.5s 1;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+
+    @keyframes colors {
+        0% {left: 0; z-index: 100;}
+        100% {left : 98%; z-index: -100; visibility: hidden;}
+    }
+
+    @-webkit-keyframes colors {
+        0% {left: 0; z-index: 100;}
+        100% {left : 98%; z-index: -100; visibility: hidden;}
+    }
+}

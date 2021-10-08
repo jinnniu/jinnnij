@@ -1,0 +1,65 @@
+.font {
+
+    .moonalpha {
+        img {
+            height: 7rem;
+            margin: 0.7rem;
+            box-shadow: 0px 0px 7px black;
+        }
+
+        img:hover{
+            height: 18rem;
+        }
+    }
+
+    .process {
+        margin-bottom: 10rem;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 1rem;
+        img {
+            width: 30%;
+        }
+    }
+
+    .txt {
+        margin-top: 10rem;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 1rem;
+        img {
+            margin-top: 1rem;
+            height: 20rem;
+        }
+    }
+
+    .moonposter {
+        img {
+            width: 21rem;
+            margin: 1rem;
+            box-shadow: 0px 0px 7px black;
+        }
+    }
+
+    .silkScreen {
+        img {
+            margin: 2rem;
+            box-shadow: 0px 0px 7px black;
+        }
+    }
+
+    .line {
+        border-top: 1px solid black;
+        padding-top: 3rem;
+    }
+
+    .outfit {
+        margin-bottom: 5rem;
+        img {
+            height: 18rem;
+            width: 28.3rem;
+            margin: 0.5rem;
+        }
+    }
+
+}

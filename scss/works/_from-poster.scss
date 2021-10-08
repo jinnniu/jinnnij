@@ -1,0 +1,27 @@
+.feelings {
+    margin-bottom: 3rem;
+
+    img {
+        box-shadow: 0px 0px 7px black;
+    }
+
+    .main {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    .main img:hover{
+        cursor: sw-resize;
+    }
+
+    .screenshot {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+
+        img {
+            width: 38%;
+            margin: 0.7rem;
+        }
+    }
+
+}

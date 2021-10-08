@@ -1,0 +1,29 @@
+.ai {
+    margin-bottom: 5rem;
+
+    img {
+        margin-bottom: 2rem;
+        box-shadow: 0px 0px 7px black;
+    }
+
+    .linking {
+        display: grid;
+        width: 85%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        img {
+            width: 90%;
+            margin-bottom: 1.5rem;
+            margin-left: 2.8rem;
+        }
+    }
+
+    .linking img:hover{
+        cursor: sw-resize;
+    }
+
+    .screenshot img {
+        width: 50rem;
+    }
+}

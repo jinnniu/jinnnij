@@ -1,0 +1,14 @@
+.bungee, .picture {
+    margin-bottom: 5rem;
+
+    img {
+        width: 85%;
+        margin-bottom: 2rem;
+        box-shadow: 0px 0px 7px black;
+    }
+
+    img:hover{
+        cursor: sw-resize;
+    }
+
+}

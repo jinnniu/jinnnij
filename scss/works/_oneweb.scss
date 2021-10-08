@@ -1,0 +1,23 @@
+.oneweb {
+
+    .screenshot {
+        img {
+            width: 85%;
+            margin-bottom: 2rem;
+            box-shadow: 0px 0px 7px black;
+        }
+    }
+
+    .objects {
+        img {
+            width: 23.5rem;
+            margin: 1.5rem;
+            box-shadow: 0px 0px 7px black;
+        }
+    }
+
+    img:hover{
+        cursor: sw-resize;
+    }
+
+}

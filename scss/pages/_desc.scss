@@ -1,0 +1,89 @@
+// Description section
+#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+    display: grid;
+    grid-template-columns: 0.9fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 9rem;
+    padding-left: 1%;
+    font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+}
+
+.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    -webkit-flex-direction: column; 
+    flex-direction: column;
+    padding-top: 0.7rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+
+
+.sub {
+    margin-top: 2rem;
+    padding: 2.1rem;
+    font-size: 0.93rem;
+    line-height: 2.1rem;
+    a {
+        color: black;
+        font-weight: normal;
+    }
+
+    a:hover {
+        color: red;
+    }
+}
+
+.title {
+    text-align: center;
+      
+    ul {
+        margin-top: 2.3rem;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+
+    span {
+        font-size: 1.4rem;
+        margin-top: 0.7rem;
+        font-family: $mainFont;
+        font-weight: 300;
+        line-height: 2.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+}
+
+#right {
+    border-left: 0.1rem black solid;
+    background-color: white;
+    position: relative;
+    overflow-y: hidden;
+    width: 31%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin-top: 0rem;
+    padding: 7.7rem 1.4rem 0 1.4rem;
+
+    p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    li {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 200;
+    }
+
+}

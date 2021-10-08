@@ -1,0 +1,53 @@
+// CV page
+.containerInfo {
+    height: 100%;
+
+    #cv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+        font-family: Helvetica, sans-serif;
+        height: 100%;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll;
+        #portrait {
+            display: grid;
+            grid-template-columns: repeat(51, 1fr);
+            grid-template-rows: repeat(51, 1fr);
+            gap: 0;
+            width: 39rem;
+            height: 39rem;
+            margin: 11rem 1rem 5rem 7rem;
+        }
+
+        #me {
+            font-weight: lighter;
+            
+            p {
+                font-size: 1.1rem;
+                line-height: 2.1rem;
+            }
+
+            .insideme {
+                overflow-y: scroll;
+                -ms-overflow-style: none; /* for Internet Explorer, Edge */
+                scrollbar-width: none; /* for Firefox */
+                padding : 2.3rem;
+                width: 80%;
+                height: 30rem;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+
+                li {
+                    line-height: 2rem;
+                }
+            }
+
+            .insideme::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
+}

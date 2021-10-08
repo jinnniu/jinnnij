@@ -20,9 +20,35 @@
                                                                                                                                                                        
 */
 
-@import "style";
-@import "include-media";
+// source : font - value - import 
+@import "src/include-media";
+@import "src/font";
+@import "src/import";
+@import "src/value";
+
+// pages : Info - Works - colorfulbar - description
+@import "pages/style";
+@import "pages/categories";
+@import "pages/colorful-bar";
+@import "pages/desc";
+@import "pages/info";
+
+// art work pages
+@import "works/media-art";
+@import "works/art-exhibition";
+@import "works/burn-out";
+@import "works/calendar";
+@import "works/food-apartment";
+@import "works/from-poster";
+@import "works/ai";
+@import "works/moiza";
+@import "works/mooning";
+@import "works/oneweb";
+@import "works/raum";
+@import "works/sharing";
+@import "works/threed";
+@import "works/typo2";
+@import "works/webzine";
+
+// Media query
 @import "media";
-@import "value";
-@import "font";
-@import "import";
