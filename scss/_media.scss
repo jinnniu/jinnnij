@@ -54,10 +54,6 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
         }
     }
 
-    #loading {
-        left: 37%;
-    }
-
     // Works.html
     @include verticalCategory;
 
@@ -120,21 +116,7 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
 
     // Info.html
     @include verticalInfo;
-
-
-    .ai .linking .linkimg {
-        margin-left: 0rem;
-    }
     
-    .ai .screenshot .gif {
-        width: 40rem;
-    }
-
-    
-    .ai .linking .linkimg {
-        margin-left: 1.1rem;
-    }
-
     .ai .screenshot .gif {
         width: 40rem;
     }
