@@ -9,6 +9,8 @@
     margin-top: 9rem;
     padding-left: 1%;
     font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
 }
 
 .burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {

@@ -9,8 +9,6 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
         font-size: 10px;
         margin: 0;
         padding: 0;
-        -ms-overflow-style: none; /* for Internet Explorer, Edge */
-        scrollbar-width: none; /* for Firefox */
     }
 
     // Index.html
@@ -114,6 +112,8 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
         overflow-x: hidden;
         margin: 0;
         padding: 0;
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
     }
 
     // Info.html
@@ -154,6 +154,7 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
         overflow-x: hidden;
         margin: 0;
         padding: 0;
+        
     }
 
     .containerInfo #cv{

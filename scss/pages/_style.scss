@@ -4,6 +4,10 @@ html {
     scrollbar-width: none; /* for Firefox */
 }
 
+::-webkit-scrollbar { 
+    display: none; /* Chrome Safari */
+}
+
 body {
     padding: 0;
     margin: 0;

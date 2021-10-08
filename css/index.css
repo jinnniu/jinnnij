@@ -42,6 +42,11 @@ html {
   /* for Firefox */
 }
 
+::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -545,6 +550,10 @@ a:hover {
   margin-top: 9rem;
   padding-left: 1%;
   font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
 }
 
 .burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
@@ -1679,10 +1688,6 @@ a:hover {
     font-size: 10px;
     margin: 0;
     padding: 0;
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
   }
   #container {
     -ms-overflow-style: none;
@@ -1919,6 +1924,10 @@ a:hover {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
   }
   .containerInfo .copyright {
     mix-blend-mode: normal;
