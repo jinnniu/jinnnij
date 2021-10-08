@@ -118,7 +118,7 @@ a:hover {
 }
 
 #container .con:hover {
-  flex-shrink: 0.6;
+  flex-shrink: 0.67;
 }
 
 #container .con:hover a {
