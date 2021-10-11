@@ -393,6 +393,5 @@ $(document).ready(function(){
         $('.color13').css("animation-play-state","running");
         $('.color14').css("animation-play-state","running");
     });
-
-
+    
 });

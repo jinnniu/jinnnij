@@ -122,6 +122,11 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
     .ai .screenshot .gif {
         width: 40rem;
     }
+
+    // Works.html
+    #categorize .catego2 .works2 img {
+        height: 10rem;
+    }
 }
 
 // Big Screen //
@@ -144,6 +149,11 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
 
     .ai .screenshot .gif {
         width: 55rem;
+    }
+
+    // Works.html
+    #categorize .catego2 .works2 img {
+        height: 12rem;
     }
 }
 

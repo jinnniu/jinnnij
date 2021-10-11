@@ -262,7 +262,7 @@ a:hover {
   font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
   display: grid;
   display: flex;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 0;
   margin-top: 4.3rem;
@@ -273,10 +273,6 @@ a:hover {
   scrollbar-width: none;
   /* for Firefox */
   overflow-y: scroll;
-}
-
-#categorize .works-link:hover {
-  background-color: #232323;
 }
 
 #categorize .works-link:hover a {
@@ -344,17 +340,87 @@ a:hover {
 }
 
 #categorize .catego2 .works2 {
-  display: block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
-#categorize .catego2 .works2 .graphic.edit.website.etc2 {
+#categorize .catego2 .works2 .graphic .edit .website .etc2 {
   transition-timing-function: ease 1s;
 }
 
 #categorize .catego2 .works2 .works-link {
-  font-size: 1.1rem;
   padding: 1.4rem;
-  border-bottom: 1px solid #0e0e0e;
+  text-align: center;
+}
+
+#categorize .catego2 .works2 img {
+  height: 14rem;
+}
+
+#categorize .title1:hover {
+  background-color: #b27fb2;
+}
+
+#categorize .title2:hover {
+  background-color: #ffca36;
+}
+
+#categorize .title3:hover {
+  background-color: #878686;
+}
+
+#categorize .title4:hover {
+  background-color: #ff22f5;
+}
+
+#categorize .title5:hover {
+  background-color: #349193;
+}
+
+#categorize .title6:hover {
+  background-color: #aeaeae;
+}
+
+#categorize .title7:hover {
+  background-color: #2e73ef;
+}
+
+#categorize .title8:hover {
+  background-color: #9d5fff;
+}
+
+#categorize .title9:hover {
+  background-color: #fc8c12;
+}
+
+#categorize .title10:hover {
+  background-color: #1ead84;
+}
+
+#categorize .title11:hover {
+  background-color: #727272;
+}
+
+#categorize .title12:hover {
+  background-color: #99d766;
+}
+
+#categorize .title13:hover {
+  background-color: #3537a5;
+}
+
+#categorize .title14:hover {
+  background-color: #00a5f7;
+}
+
+#categorize .title15:hover {
+  background-color: #070707;
+}
+
+#categorize .title16:hover {
+  background-color: #8e8ef7;
 }
 
 .colorful {
@@ -1965,6 +2031,9 @@ a:hover {
   .ai .screenshot .gif {
     width: 40rem;
   }
+  #categorize .catego2 .works2 img {
+    height: 10rem;
+  }
 }
 
 @media (min-width: 1701px) and (max-width: 2000px) {
@@ -1980,6 +2049,9 @@ a:hover {
   }
   .ai .screenshot .gif {
     width: 55rem;
+  }
+  #categorize .catego2 .works2 img {
+    height: 12rem;
   }
 }
 
