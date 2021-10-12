@@ -273,6 +273,7 @@ a:hover {
   scrollbar-width: none;
   /* for Firefox */
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #categorize .works-link:hover a {
