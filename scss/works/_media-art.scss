@@ -1,7 +1,7 @@
 .bungee, .picture {
     margin-bottom: 5rem;
 
-    img {
+    .mainpic {
         width: 85%;
         margin-bottom: 2rem;
         box-shadow: 0px 0px 7px black;
@@ -9,6 +9,24 @@
 
     img:hover{
         cursor: sw-resize;
+    }
+
+    .picture-detail {
+        margin: 14rem 0 5rem 0;
+        img {
+            width: 39%;
+            padding: 0.7rem;
+        }
+        p{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .video-explain {
+        padding-top: 2.3rem;
+        border-top: 0.1rem black solid;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
     }
 
 }
