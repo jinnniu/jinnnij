@@ -65,7 +65,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        transition: flex-shrink 0.5s ease-in-out;
+        transition: flex-shrink 0.5s ease-out;
 
         a {
             z-index: 10;
@@ -81,9 +81,6 @@ a:hover {
             display: none;
 
             img {
-                // position: absolute;
-                // bottom : 5%;
-                // width: 5%;
                 width: 39rem;
                 padding-top: 10%;
                 padding-right: 5%;
