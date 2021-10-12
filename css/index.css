@@ -1271,7 +1271,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.feelings .main img:hover {
+.feelings .main:hover {
   cursor: sw-resize;
 }
 
