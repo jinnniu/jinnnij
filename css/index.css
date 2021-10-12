@@ -1863,7 +1863,7 @@ a:hover {
     grid-template-rows: 1fr;
   }
   #horizontal div {
-    border-right: 0.14rem #0e0e0e solid;
+    border-right: 1px #0e0e0e solid;
     opacity: 0;
   }
   p {
@@ -1884,7 +1884,7 @@ a:hover {
     position: relative;
     bottom: 0;
     border-left: 0;
-    border-top: 0.05rem solid #0e0e0e;
+    border-top: 1px solid #0e0e0e;
     width: 100%;
     margin-top: 5rem;
     padding: 3rem 0 0 0;
@@ -1981,7 +1981,7 @@ a:hover {
     grid-template-rows: 1fr;
   }
   #horizontal div {
-    border-right: 0.14rem #0e0e0e solid;
+    border-right: 1px #0e0e0e solid;
     opacity: 0;
   }
   p {
@@ -2002,7 +2002,7 @@ a:hover {
     position: relative;
     bottom: 0;
     border-left: 0;
-    border-top: 0.05rem solid #0e0e0e;
+    border-top: 1px solid #0e0e0e;
     width: 100%;
     margin-top: 5rem;
     padding: 3rem 0 0 0;

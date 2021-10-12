@@ -28,7 +28,7 @@
         grid-template-columns: repeat(18, 1fr);
         grid-template-rows: 1fr;
         div {
-            border-right: 0.14rem rgb(14, 14, 14) solid;
+            border-right: 1px rgb(14, 14, 14) solid;
             opacity:0;
         }
     }
@@ -54,7 +54,7 @@
             position: relative;
             bottom:0;
             border-left:0;
-            border-top:0.05rem solid rgb(14, 14, 14);
+            border-top: 1px solid rgb(14, 14, 14);
             width: 100%;
             margin-top: 5rem;
             padding: 3rem 0 0 0;
