@@ -673,7 +673,7 @@ a:hover {
 }
 
 #right {
-  border-left: 0.1rem #0e0e0e solid;
+  border-left: 1px solid #0e0e0e;
   background-color: white;
   position: relative;
   overflow-y: hidden;
@@ -784,7 +784,7 @@ a:hover {
 
 .bungee .video-explain, .picture .video-explain {
   padding-top: 2.3rem;
-  border-top: 0.1rem #0e0e0e solid;
+  border-top: 1px solid #0e0e0e;
   margin-top: 7rem;
   margin-bottom: 2rem;
 }
@@ -1289,7 +1289,7 @@ a:hover {
 .feelings .picture-explain {
   margin-top: 10rem;
   padding-top: 2.3rem;
-  border-top: 0.1rem #0e0e0e solid;
+  border-top: 1px solid #0e0e0e;
 }
 
 .ai {
@@ -1329,7 +1329,7 @@ a:hover {
 .ai .video-explain {
   margin-top: 14rem;
   padding-top: 2.3rem;
-  border-top: 0.1rem #0e0e0e solid;
+  border-top: 1px solid #0e0e0e;
 }
 
 .moiza .moizaposter {
