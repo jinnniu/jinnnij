@@ -1,9 +1,13 @@
 .ai {
     margin-bottom: 5rem;
 
+    p{
+        margin-bottom: 2rem;
+    }
+
     img {
         margin-bottom: 2rem;
-        box-shadow: 0px 0px 7px black;
+        box-shadow: 0px 0px 7px rgb(14, 14, 14);
     }
 
     .linking {
@@ -23,7 +27,13 @@
         cursor: sw-resize;
     }
 
-    .screenshot img {
-        width: 50rem;
+    .empathy-gif {
+        width: 48rem;
+    }
+
+    .video-explain {
+        margin-top: 14rem;
+        padding-top: 2.3rem;
+        border-top: 0.1rem rgb(14, 14, 14) solid;
     }
 }

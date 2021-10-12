@@ -18,7 +18,7 @@
         letter-spacing: 0.1rem;
         word-spacing: 0.1rem;
         /*color: white;
-        text-shadow: 1px 1px 1px black, 0 0 15px black, 0 0 11px black;*/
+        text-shadow: 1px 1px 1px rgb(14, 14, 14), 0 0 15px rgb(14, 14, 14), 0 0 11px rgb(14, 14, 14);*/
         // -webkit-text-decoration-line: line-through; /* Safari */
         // text-decoration-line: line-through; 
     }
@@ -29,7 +29,7 @@
         img {
             width: 28%;
             margin: 1rem;
-            box-shadow: 0px 0px 7px black;
+            box-shadow: 0px 0px 7px rgb(14, 14, 14);
         }
     }
 
@@ -37,7 +37,7 @@
         img {
             width: 85%;
             padding: 3rem;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid rgb(14, 14, 14);
         }
     }
 
@@ -200,7 +200,7 @@
         padding: 1.4rem;
         display: flex;
         justify-content: center;
-        background-color: black;
+        background-color: rgb(14, 14, 14);
         margin-bottom: 3rem;
         cursor: alias;
 

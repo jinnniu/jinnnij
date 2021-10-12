@@ -32,7 +32,7 @@
     font-size: 0.93rem;
     line-height: 2.1rem;
     a {
-        color: black;
+        color: rgb(14, 14, 14);
         font-weight: normal;
     }
 
@@ -65,7 +65,7 @@
 }
 
 #right {
-    border-left: 0.1rem black solid;
+    border-left: 0.1rem rgb(14, 14, 14) solid;
     background-color: white;
     position: relative;
     overflow-y: hidden;

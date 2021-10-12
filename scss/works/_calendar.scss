@@ -1,13 +1,24 @@
 .calendar {
 
     img {
-        box-shadow: 0px 0px 7px black;
+        box-shadow: 0px 0px 7px rgb(14, 14, 14);
     }
 
     .manual img{
         height: 29rem;
         box-shadow: none;
         margin: 0.3rem;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .fullshot {
+        width: 90%;
+        left: 7%;
+        margin-top: 10rem;
     }
 
     .content1 {
@@ -37,6 +48,6 @@
         background-color:inherit;
         text-align:center;
         white-space:nowrap;
-        color: black;
+        color: rgb(14, 14, 14);
     }
 }

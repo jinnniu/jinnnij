@@ -22,7 +22,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(14, 14, 14);
 }
 
 a:hover {
@@ -184,7 +184,7 @@ a:hover {
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     div {
-        border-top: 0.14rem black solid;
+        border-top: 0.14rem rgb(14, 14, 14) solid;
         opacity:0;
     }
 }
@@ -202,7 +202,7 @@ a:hover {
     width: 100%;
     background-color: white;
     z-index: 100;
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(14, 14, 14) solid;
     //box-shadow: 0px 10px 10px white;
     font-size: 1.5rem;
     font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif;
@@ -216,7 +216,7 @@ a:hover {
     a:hover {
         /*
         color: white;
-        text-shadow: 1px 1px 0.5px black, 0 0 3px black, 0 0 10px black, 0 0 18px black;
+        text-shadow: 1px 1px 0.5px rgb(14, 14, 14), 0 0 3px rgb(14, 14, 14), 0 0 10px rgb(14, 14, 14), 0 0 18px rgb(14, 14, 14);
         */
         -webkit-text-decoration-line: line-through; /* Safari */
         text-decoration-line: line-through;

@@ -28,7 +28,7 @@
         grid-template-columns: repeat(18, 1fr);
         grid-template-rows: 1fr;
         div {
-            border-right: 0.14rem black solid;
+            border-right: 0.14rem rgb(14, 14, 14) solid;
             opacity:0;
         }
     }
@@ -54,7 +54,7 @@
             position: relative;
             bottom:0;
             border-left:0;
-            border-top:0.05rem solid black;
+            border-top:0.05rem solid rgb(14, 14, 14);
             width: 100%;
             margin-top: 5rem;
             padding: 3rem 0 0 0;
@@ -126,7 +126,7 @@
         margin-top: 7rem;
         display: inline-block;
         text-decoration: none;
-        color: black;
+        color: rgb(14, 14, 14);
         background: rgb(217,216,218);
         border-radius: 5px;
         box-shadow: -3px -3px 5px 0px #ffffffa6 inset, 3px 3px 5px 0px #0000004a inset;
