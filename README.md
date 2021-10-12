@@ -1,6 +1,6 @@
 # jinnnij
 
-Personal Portfolio Website
+This is "Personal Portfolio Website"
 
 Designed & Developed by Jinnie Jeong
 
