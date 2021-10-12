@@ -1,4 +1,4 @@
-$breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmous: 2000px);
+$breakpoints: (small: 110px, medium: 760px, large: 1024px, huge: 1700px, enourmous: 2000px);
 
 /* Start Media Query */
 
@@ -9,6 +9,7 @@ $breakpoints: (small: 210px, medium: 760px, large: 1024px, huge: 1700px, enourmo
         font-size: 10px;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
     // Index.html

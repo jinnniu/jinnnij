@@ -1819,12 +1819,13 @@ a:hover {
 }
 
 /* Start Media Query */
-@media (min-width: 210px) and (max-width: 760px) {
+@media (min-width: 110px) and (max-width: 760px) {
   /* For mobile phones: */
   html {
     font-size: 10px;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   #container {
     -ms-overflow-style: none;
