@@ -16,6 +16,7 @@
         width: 100%;
         text-align: center;
         margin-top: 3rem;
+        margin-bottom: 2rem;
         letter-spacing: 0.1rem;
         word-spacing: 0.1rem;
         // -webkit-text-decoration-line: line-through; /* Safari */
@@ -34,12 +35,23 @@
     }
 
     .foodexhibition {
-        margin-bottom: 3rem;
-
         img {
             width: 75%;
             box-shadow: 0px 0px 7px black;
         }
+    }
+
+    .book-detail {
+        margin: 7rem 0;
+        img {
+            width: 80%;
+        }
+    }
+
+    .book-explain {
+        width: 80%;
+        border-top: 0.1rem solid black;
+        padding: 5rem;
     }
 
     .book1 {
@@ -345,5 +357,10 @@
                 transform-style: preserve-3d;
             }
         }
+    }
+
+    .book-notice {
+        font-size:0.7rem;
+        margin-top:0;
     }
 }
