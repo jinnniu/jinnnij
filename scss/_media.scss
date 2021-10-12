@@ -12,6 +12,13 @@ $breakpoints: (small: 110px, medium: 760px, large: 1024px, huge: 1700px, enourmo
         overflow-x: hidden;
     }
 
+    #container .con {
+        transition: flex-shrink 0.3s ease-out;
+        &:hover {
+            flex-shrink: 0.8;
+        }
+    }
+
     // Index.html
     @include mobileMain;
 

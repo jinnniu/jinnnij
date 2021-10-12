@@ -1827,6 +1827,12 @@ a:hover {
     padding: 0;
     overflow-x: hidden;
   }
+  #container .con {
+    transition: flex-shrink 0.3s ease-out;
+  }
+  #container .con:hover {
+    flex-shrink: 0.8;
+  }
   #container {
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
