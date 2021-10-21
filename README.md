@@ -1,4 +1,4 @@
-# jinnnij
+# Jinnie Jeong
 
 This is "Personal Portfolio Website"
 
