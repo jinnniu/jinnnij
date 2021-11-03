@@ -44,7 +44,7 @@
         text-align: center;
     }
 
-    #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+    #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy, #inspiration {
         display: block;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -135,5 +135,13 @@
     
     .btn:hover {
         color: rgb(233, 51, 51);
+    }
+}
+
+@mixin videoExplain {
+    .video-explain {
+        margin-top: 14rem;
+        padding-top: 2.3rem;
+        border-top: 1px solid rgb(14, 14, 14);
     }
 }

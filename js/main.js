@@ -129,6 +129,13 @@ $(document).ready(function(){
         $('#horizontal div:nth-child(' + random13 + ')').css("opacity", "0");$('#horizontal div:nth-child(' + random12 + ')').css("opacity", "0");$('#horizontal div:nth-child(' + random11 + ')').css("opacity", "0");
         $('#vertical16 .sideimage').attr("style", "display: none");
     });
+    $("#vertical17").mouseenter(function() {
+        $('#horizontal div:nth-child(' + random11 + ')').css("opacity", "1");$('#horizontal div:nth-child(' + random7 + ')').css("opacity", "1");
+        $('#vertical17 .sideimage').attr("style", "display: block !important");
+    }).mouseleave(function() {
+        $('#horizontal div:nth-child(' + random11 + ')').css("opacity", "0");$('#horizontal div:nth-child(' + random7 + ')').css("opacity", "0");
+        $('#vertical17 .sideimage').attr("style", "display: none");
+    });
 
 
     //Filling+Feeling

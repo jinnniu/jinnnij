@@ -210,6 +210,10 @@ a:hover {
   background-color: #8e8ef7;
 }
 
+#container #vertical17:hover {
+  background-color: #dadada;
+}
+
 #horizontal {
   position: absolute;
   z-index: -1000;
@@ -424,6 +428,10 @@ a:hover {
   background-color: #8e8ef7;
 }
 
+#categorize .title17:hover {
+  background-color: #dadada;
+}
+
 .colorful {
   position: absolute;
   top: 0;
@@ -607,7 +615,7 @@ a:hover {
   }
 }
 
-#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy, #inspiration {
   display: grid;
   grid-template-columns: 0.9fr 0.5fr;
   grid-template-rows: 1fr;
@@ -623,7 +631,7 @@ a:hover {
   /* for Firefox */
 }
 
-.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai {
+.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai, .note {
   display: flex;
   position: relative;
   align-items: center;
@@ -779,8 +787,12 @@ a:hover {
 }
 
 .bungee .video-explain, .picture .video-explain {
+  margin-top: 14rem;
   padding-top: 2.3rem;
   border-top: 1px solid #0e0e0e;
+}
+
+.bungee .video-explain, .picture .video-explain {
   margin-top: 7rem;
   margin-bottom: 2rem;
 }
@@ -1815,6 +1827,43 @@ a:hover {
   cursor: pointer;
 }
 
+#inspiration {
+  margin-bottom: 5rem;
+}
+
+#inspiration .mainpic img {
+  width: 45%;
+  margin: 0.5rem;
+  filter: grayscale(1);
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 7px #0e0e0e;
+}
+
+#inspiration img:hover {
+  cursor: sw-resize;
+  filter: grayscale(0);
+}
+
+#inspiration .picture-detail {
+  margin: 14rem 0 5rem 0;
+}
+
+#inspiration .picture-detail img {
+  width: 70%;
+  padding-top: 2.5rem;
+}
+
+#inspiration .video-explain {
+  margin-top: 14rem;
+  padding-top: 2.3rem;
+  border-top: 1px solid #0e0e0e;
+}
+
+#inspiration .video-explain {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
 /* Start Media Query */
 @media (min-width: 110px) and (max-width: 760px) {
   /* For mobile phones: */
@@ -1870,13 +1919,13 @@ a:hover {
     font-size: 1rem;
     text-align: center;
   }
-  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy, #inspiration {
     display: block;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 0;
   }
-  #con1 #right, #con2 #right, #ty1 #right, #ty2 #right, #three #right, #art #right, #jump #right, #full #right, #so1 #right, #so2 #right, #webzine #right, #real #right, #type #right, #oneday #right, #seoul50 #right, #raum #right, #calendiary #right, #empathy #right {
+  #con1 #right, #con2 #right, #ty1 #right, #ty2 #right, #three #right, #art #right, #jump #right, #full #right, #so1 #right, #so2 #right, #webzine #right, #real #right, #type #right, #oneday #right, #seoul50 #right, #raum #right, #calendiary #right, #empathy #right, #inspiration #right {
     position: relative;
     bottom: 0;
     border-left: 0;
@@ -1988,13 +2037,13 @@ a:hover {
     font-size: 1rem;
     text-align: center;
   }
-  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy {
+  #con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy, #inspiration {
     display: block;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 0;
   }
-  #con1 #right, #con2 #right, #ty1 #right, #ty2 #right, #three #right, #art #right, #jump #right, #full #right, #so1 #right, #so2 #right, #webzine #right, #real #right, #type #right, #oneday #right, #seoul50 #right, #raum #right, #calendiary #right, #empathy #right {
+  #con1 #right, #con2 #right, #ty1 #right, #ty2 #right, #three #right, #art #right, #jump #right, #full #right, #so1 #right, #so2 #right, #webzine #right, #real #right, #type #right, #oneday #right, #seoul50 #right, #raum #right, #calendiary #right, #empathy #right, #inspiration #right {
     position: relative;
     bottom: 0;
     border-left: 0;
