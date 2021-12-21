@@ -4,21 +4,23 @@
     .mainpic img {
         width: 45%;
         margin: 0.5rem;
-        filter: grayscale(1);
+        filter: grayscale(0);
         margin-bottom: 2rem;
         box-shadow: 0px 0px 7px rgb(14, 14, 14);
+        &:hover{
+            cursor: sw-resize;
+        }
     }
 
-    img:hover{
-        cursor: sw-resize;
-        filter: grayscale(0);
-    }
-
-    .picture-detail {
-        margin: 14rem 0 5rem 0;
+    .example {
         img {
-            width: 70%;
-            padding-top: 2.5rem;
+            height: 21rem;
+            padding: 0.5rem;
+            filter: grayscale(1);
+            &:hover {
+                filter: grayscale(0);
+                height: 25rem;
+            }
         }
     }
     
