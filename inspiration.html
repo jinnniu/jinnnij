@@ -1,71 +1,106 @@
 <html lang="en-US ko">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Full pictures</title>
-        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="/css/index.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full pictures</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="img/symbol.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+      integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 📱 -->
 
-        <!-- 📱 -->
-
-        <div id="navbar">
-            <div class="navbar1">
-                <a href="index.html">Jinnie Jeong</a>
-            </div>
-            <div class="navbar2">
-                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
-                <a href="works.html">Works</a>
-            </div>
+    <div id="navbar">
+      <div class="navbar1">
+        <a href="index.html">Jinnie Jeong</a>
+      </div>
+      <div class="navbar2">
+        <a style="margin-right: 2.1rem" href="info.html">Info</a>
+        <a href="works.html">Works</a>
+      </div>
+    </div>
+    <div id="inspiration">
+      <span id="loading">Loading</span>
+      <div class="note" data-aos="fade-left">
+        <div
+          class="mainpic"
+          onclick="location.href='https://theinspirationnote.com/'"
+        >
+          <img src="img/inspiration/vertical2.jpg" alt="screenshot" />
+          <img src="img/inspiration/horizontal2.jpg" alt="screenshot" />
         </div>
-        <div id="inspiration">
-            <span id="loading">Loading</span>
-            <div class="note" data-aos="fade-left">
-                <div class="mainpic" onclick="location.href='https://theinspirationnote.com/'">
-                    <img src="img/inspiration/vertical2.jpg" alt="screenshot">
-                    <img src="img/inspiration/horizontal2.jpg" alt="screenshot">
-                </div>
-                <a href="https://theinspirationnote.com/" target="_blank">Click</a>
-                <p class="video-explain" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Inspiration Photos</p>
-                <div class="example">
-                    <img src="img/inspiration/IMG_1314.jpg" alt="example photo-sea">
-                    <img src="img/inspiration/IMG_1376.jpg" alt="example photo-pizza">
-                    <img src="img/inspiration/IMG_2316.jpg" alt="example photo-boots">
-                </div>
-                <p class="video-explain" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Archive Video</p>
-                <video id="webvideo" width="75%" controls data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                    <source src="img/inspiration/inspiration.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div id="right" data-aos="fade-left">
-                <div class="title">
-                    <span>Inspiration Note</span>
-                    <ul>
-                        <li style="padding-bottom: 1rem">2021</li>
-                        <li>Personal Project</li>
-                    </ul>
-                </div>
-                <div class="sub">
-                    <p style="text-align: center;">"Inspiration Note" is the small project with photos<br>which give me inspirations I've collected since 2019. <br>Enjoy! </p>
-                </div>
-            </div>
+        <a href="https://theinspirationnote.com/" target="_blank">Click</a>
+        <p
+          class="video-explain"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          Inspiration Photos
+        </p>
+        <div class="example">
+          <img src="img/inspiration/IMG_1314.jpg" alt="example photo-sea" />
+          <img src="img/inspiration/IMG_1376.jpg" alt="example photo-pizza" />
+          <img src="img/inspiration/IMG_2316.jpg" alt="example photo-boots" />
         </div>
+        <p
+          class="video-explain"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          Archive Video
+        </p>
+        <video
+          id="webvideo"
+          width="75%"
+          controls
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <source src="img/inspiration/inspiration.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div id="right" data-aos="fade-left">
+        <div class="title">
+          <span>Inspiration Note</span>
+          <ul>
+            <li style="padding-bottom: 1rem">2021</li>
+            <li>Personal Project</li>
+          </ul>
+        </div>
+        <div class="sub">
+          <p style="text-align: center">
+            "Inspiration Note" is the small project with photos<br />which give
+            me inspirations I've collected since 2019. <br />Enjoy!
+          </p>
+        </div>
+      </div>
+    </div>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1400,
-            });
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1400,
+      });
 
-            $(window).load(function() {
-                $('#loading').hide();
-            });
-        </script>
-    </body>
+      $(window).load(function () {
+        $("#loading").hide();
+      });
+    </script>
+  </body>
 </html>

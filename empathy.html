@@ -1,79 +1,117 @@
 <html lang="en-US ko">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Empathy AI</title>
-        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="/css/index.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empathy AI</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="img/symbol.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+      integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 🦾 -->
 
-        <!-- 🦾 -->
-
-        <div id="navbar">
-            <div class="navbar1">
-                <a href="index.html">Jinnie Jeong</a>
-            </div>
-            <div class="navbar2">
-                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
-                <a href="works.html">Works</a>
-            </div>
+    <div id="navbar">
+      <div class="navbar1">
+        <a href="index.html">Jinnie Jeong</a>
+      </div>
+      <div class="navbar2">
+        <a style="margin-right: 2.1rem" href="info.html">Info</a>
+        <a href="works.html">Works</a>
+      </div>
+    </div>
+    <div id="empathy">
+      <span id="loading">Loading</span>
+      <div class="ai" data-aos="fade-left">
+        <img
+          src="img/web/empathy_main_screenshot.png"
+          style="width: 77%; cursor: sw-resize"
+          onclick="location.href='./nofile.html'"
+        />
+        <a href="./nofile.html">Click</a>
+        <p
+          class="video-explain"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          Screenshot Images
+        </p>
+        <div class="linking" onclick="location.href='./nofile.html'">
+          <img class="linkimg" src="img/web/empathy_1.jpg" />
+          <img class="linkimg" src="img/web/empathy_3.jpg" />
+          <img class="linkimg" src="img/web/empathy_5.jpg" />
+          <img class="linkimg" src="img/web/empathy_6.jpg" />
+          <img class="linkimg" src="img/web/empathy_4.jpg" />
+          <img class="linkimg" src="img/web/empathy_2.jpg" />
         </div>
-        <div id="empathy">
-            <span id="loading">Loading</span>
-            <div class="ai" data-aos="fade-left">
-                <img src="img/web/empathy_main_screenshot.png" style="width: 77%; cursor: sw-resize;" onclick="location.href='./nofile.html'">
-                <a href="./nofile.html">Click</a>
-                <p class="video-explain" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Screenshot Images</p>
-                <div class="linking" onclick="location.href='./nofile.html'">
-                    <img class="linkimg" src="img/web/empathy_1.jpg">
-                    <img class="linkimg" src="img/web/empathy_3.jpg">
-                    <img class="linkimg" src="img/web/empathy_5.jpg">
-                    <img class="linkimg" src="img/web/empathy_6.jpg">
-                    <img class="linkimg" src="img/web/empathy_4.jpg">
-                    <img class="linkimg" src="img/web/empathy_2.jpg">
-                </div>
-                <!-- <a href="https://webspace.merz-akademie.de/~yuujin.jeong/empathy_ai/" target="_blank">Click</a>
+        <!-- <a href="https://webspace.merz-akademie.de/~yuujin.jeong/empathy_ai/" target="_blank">Click</a>
                 <p style="text-decoration:none;font-size:0.7rem;margin-top:1rem;">(Only works in Web : Chrome for webcam)</p> -->
 
-                <p class="video-explain" data-aos="fade-up" data-aos-anchor-placement="center-bottom">How to get empathized BY 'Empathy AI'</p>
-                <img class="empathy-gif" src="img/web/em_1.gif" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-
-            </div>
-            <div id="right" data-aos="fade-left">
-                <div class="title">
-                    <span>Empathy AI</span>
-                    <ul>
-                        <li style="padding-bottom: 1rem">2021</li>
-                        <li>Project : Forgiveness, Empathy, Emotion, and UX</li>
-                        <li>by Prof.Olia Lialina</li>
-                        <li>Merz-Akademie SS</li>
-                    </ul>
-                </div>
-                <div class="sub">
-                    <p>People can get hurt emotionally going through reality. Thus they might want to be consoled by someone.
-                        But it would be difficult that your Real people around you give you appropriate comfort at all times and without any questions.
-                        Therefore, to slim the odds of more hurt from real people, some tentative users may look for Artificial Friends, AI.
-                        <br>According to some articles, they use mimicry to have emotional interaction with a human. So as you can see, they imitate the facial expression or behaviors of humans.
-                        Applying the fact, they can give you not only a warm-hearted but also unlimited consolation you have wanted.</p>
-                </div>
-            </div>
+        <p
+          class="video-explain"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          How to get empathized BY 'Empathy AI'
+        </p>
+        <img
+          class="empathy-gif"
+          src="img/web/em_1.gif"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        />
+      </div>
+      <div id="right" data-aos="fade-left">
+        <div class="title">
+          <span>Empathy AI</span>
+          <ul>
+            <li style="padding-bottom: 1rem">2021</li>
+            <li>Project : Forgiveness, Empathy, Emotion, and UX</li>
+            <li>by Prof.Olia Lialina</li>
+            <li>Merz-Akademie SS</li>
+          </ul>
         </div>
+        <div class="sub">
+          <p>
+            People can get hurt emotionally going through reality. Thus they
+            might want to be consoled by someone. But it would be difficult that
+            your Real people around you give you appropriate comfort at all
+            times and without any questions. Therefore, to slim the odds of more
+            hurt from real people, some tentative users may look for Artificial
+            Friends, AI. <br />According to some articles, they use mimicry to
+            have emotional interaction with a human. So as you can see, they
+            imitate the facial expression or behaviors of humans. Applying the
+            fact, they can give you not only a warm-hearted but also unlimited
+            consolation you have wanted.
+          </p>
+        </div>
+      </div>
+    </div>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1400,
-            });
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1400,
+      });
 
-            $(window).load(function() {
-                $('#loading').hide();
-            });
-        </script>
-    </body>
+      $(window).load(function () {
+        $("#loading").hide();
+      });
+    </script>
+  </body>
 </html>

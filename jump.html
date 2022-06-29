@@ -1,70 +1,126 @@
 <html lang="en-US ko">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bungee Jumping</title>
-        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="/css/index.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bungee Jumping</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="img/symbol.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+      integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 🩱 -->
 
-        <!-- 🩱 -->
+    <div id="navbar">
+      <div class="navbar1">
+        <a href="index.html">Jinnie Jeong</a>
+      </div>
+      <div class="navbar2">
+        <a style="margin-right: 2.1rem" href="info.html">Info</a>
+        <a href="works.html">Works</a>
+      </div>
+    </div>
+    <div id="jump">
+      <span id="loading">Loading</span>
+      <div class="bungee" data-aos="fade-left">
+        <img
+          class="mainpic"
+          src="img/web/bungee.jpg"
+          alt="screenshot"
+          onclick="location.href='/web/bungee.html'"
+        />
+        <a href="/web/bungee.html" target="_blank">Click</a>
+        <p
+          class="video-explain"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          Archive Video
+        </p>
+        <iframe
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          src="https://player.vimeo.com/video/575275767?portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          width="80%"
+          height="391"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          title="Bungee Jumping"
+        ></iframe>
+      </div>
 
-        <div id="navbar">
-            <div class="navbar1">
-                <a href="index.html">Jinnie Jeong</a>
-            </div>
-            <div class="navbar2">
-                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
-                <a href="works.html">Works</a>
-            </div>
+      <div id="right" data-aos="fade-left">
+        <div class="title">
+          <span>Bungee Jumping</span>
+          <ul>
+            <li style="padding-bottom: 1rem">2020</li>
+            <li>Workshop</li>
+            <li>
+              Coloquium : Narration in Hypermedia and Algorithmic Environments
+            </li>
+            <li>by Prof.Olia Lialina</li>
+            <li>Merz-Akademie WS</li>
+          </ul>
         </div>
-        <div id="jump">
-            <span id="loading">Loading</span>
-            <div class="bungee" data-aos="fade-left">
-                <img class="mainpic" src="img/web/bungee.jpg" alt="screenshot" onclick="location.href='/web/bungee.html'">
-                <a href="/web/bungee.html" target="_blank">Click</a>
-                <p class="video-explain" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Archive Video</p>
-                <iframe data-aos="fade-up" data-aos-anchor-placement="center-bottom" src="https://player.vimeo.com/video/575275767?portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="80%" height="391" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Bungee Jumping"></iframe>
-            </div>
-            
-            <div id="right" data-aos="fade-left">
-                <div class="title">
-                    <span>Bungee Jumping</span>
-                    <ul>
-                        <li style="padding-bottom: 1rem">2020</li>
-                        <li>Workshop</li>
-                        <li>Coloquium : Narration in Hypermedia and Algorithmic Environments</li>
-                        <li>by Prof.Olia Lialina</li>
-                        <li>Merz-Akademie WS</li>
-                    </ul>
-                </div>
-                <div class="sub">
-                    <p style="padding-bottom: 5rem; text-align: center;">Connecting Screens</p>
-                    <div class="ref" style="font-size: 0.83rem; line-height: 1rem;">
-                        <p style="font-family: 'syncopateregular', 'Syncopate', Helvetica, sans-serif; padding-bottom: 0.5rem;">Reference Link</p>
-                        <p>Top: "<a href="https://www.youtube.com/watch?v=5QMlIjSnt_E&list=TLGG20xTriYoOqAxNDA0MjAyMQ&t=428s" target="_blank">Ten Meter Tower | NYT Op-Docs</a>" by 'The New York Times'</p>
-                        <p>Bottom: "<a href="https://www.youtube.com/watch?v=1d1H1IpPohY&list=TLGGUtFRBYiZh8YxNDA0MjAyMQ&t=21s" target="_blank">ASMR|Underwater sound(深海音) 2 hours</a>" by 'MAMA's sound factory'</p>
-                    </div>
-                </div>
-            </div>
+        <div class="sub">
+          <p style="padding-bottom: 5rem; text-align: center">
+            Connecting Screens
+          </p>
+          <div class="ref" style="font-size: 0.83rem; line-height: 1rem">
+            <p
+              style="
+                font-family: 'syncopateregular', 'Syncopate', Helvetica,
+                  sans-serif;
+                padding-bottom: 0.5rem;
+              "
+            >
+              Reference Link
+            </p>
+            <p>
+              Top: "<a
+                href="https://www.youtube.com/watch?v=5QMlIjSnt_E&list=TLGG20xTriYoOqAxNDA0MjAyMQ&t=428s"
+                target="_blank"
+                >Ten Meter Tower | NYT Op-Docs</a
+              >" by 'The New York Times'
+            </p>
+            <p>
+              Bottom: "<a
+                href="https://www.youtube.com/watch?v=1d1H1IpPohY&list=TLGGUtFRBYiZh8YxNDA0MjAyMQ&t=21s"
+                target="_blank"
+                >ASMR|Underwater sound(深海音) 2 hours</a
+              >" by 'MAMA's sound factory'
+            </p>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <script src="https://player.vimeo.com/api/player.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1400,
-            });
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1400,
+      });
 
-            $(window).load(function() {
-                $('#loading').hide();
-            });
-        </script>
-    </body>
+      $(window).load(function () {
+        $("#loading").hide();
+      });
+    </script>
+  </body>
 </html>

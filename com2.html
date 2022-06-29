@@ -1,289 +1,605 @@
 <html lang="en-US ko">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food Apartment</title>
-        <link id="favicon" rel="shortcut icon" href="img/symbol.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="/css/index.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A==" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/book.js"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Apartment</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="img/symbol.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;800;900&family=Syncopate:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+      integrity="sha512-poSrvjfoBHxVw5Q2awEsya5daC0p00C8SKN74aVJrs7XLeZAi+3+13ahRhHm8zdAFbI2+/SUIrKYLvGBJf9H3A=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/book.js"></script>
+  </head>
+  <body>
+    <!-- 🍏 -->
 
-        <!-- 🍏 -->
-
-        <div id="navbar">
-            <div class="navbar1">
-                <a href="index.html">Jinnie Jeong</a>
-            </div>
-            <div class="navbar2">
-                <a style="margin-right: 2.1rem;" href="info.html">Info</a>
-                <a href="works.html">Works</a>
-            </div>
+    <div id="navbar">
+      <div class="navbar1">
+        <a href="index.html">Jinnie Jeong</a>
+      </div>
+      <div class="navbar2">
+        <a style="margin-right: 2.1rem" href="info.html">Info</a>
+        <a href="works.html">Works</a>
+      </div>
+    </div>
+    <div id="con1">
+      <span id="loading">Loading</span>
+      <div class="food" data-aos="fade-left">
+        <!--container-->
+        <div class="foodexhibition">
+          <img src="img/com2/food_exhibition1.jpg" alt="Exhibition" />
+          <p>Refrigerator shaped Installation of &lt;Food Apartment&gt;</p>
         </div>
-        <div id="con1">
-            <span id="loading">Loading</span>
-            <div class="food" data-aos="fade-left"><!--container-->
-                <div class="foodexhibition">
-                    <img src="img/com2/food_exhibition1.jpg" alt="Exhibition">
-                    <p>Refrigerator shaped Installation of &lt;Food Apartment&gt;</p>
-                </div>
-                <div class="foodgif" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                    <a href="https://vimeo.com/user99603014">
-                        <img src="img/com2/food_motion_1.gif" alt="For single">
-                        <img src="img/com2/food_motion_2.gif" alt="For family">
-                        <img src="img/com2/food_motion_3.gif" alt="For sharing">
-                        <img src="img/com2/food_motion_4.gif" alt="For dorm">
-                    </a>
-                    <p>Motion Posters (Click)</p>
-                </div>
-                <div class="book-detail" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                    <p>Interview Book : Detail pages</p>
-                    <img src="img/com2/detailpages.jpg" alt="detail pages">
-                </div>
-                <p class="book-explain">--- Enjoy the books ---</p>
-                <div class="book1" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <!--content-->
-                    <ul>
-                        <li>
-                            <div class="content"> <!--book-->
-                                <ul class="front">
-                                    <li>
-                                        <div class="frontcover">
-                                            <img src="./img/com2/foodapartment_front.jpg">
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
-
-                                <ul class="page">
-                                    <li></li>
-                                    <li>
-                                        <a href="#openbook1" class="btn">Open</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-
-                                <ul class="back">
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                    <p>Food Apartment</p>
-                    <p class="book-notice">(Only works in Web : Chrome, Safari)</p>
-                </div>
-                <div class="openbook1">
-                    <div id="flipbook1">
-                        <div class="hard"> <img src="img/com2/foodapartment_front.jpg" alt="inside"> </div>
-                        <div class="hard"> <img src="img/com2/main/foodapartment2.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment3.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment4.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment5.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment6.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment7.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment8.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment9.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment10.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment11.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment12.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment13.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment14.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment15.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment16.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment17.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment18.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment19.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment20.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment21.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment22.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment23.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment24.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment25.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment26.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment27.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment28.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment29.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment30.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment31.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment32.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment33.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment34.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment35.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment36.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment37.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment38.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment39.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment40.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment41.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment42.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment43.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment44.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment45.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment46.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment47.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment48.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment49.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment50.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment51.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment52.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment53.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment54.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment55.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment56.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment57.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment58.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment59.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment60.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment61.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment62.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment63.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment64.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment65.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment66.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment67.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment68.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment69.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment70.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment71.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment72.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment73.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment74.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment75.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment76.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment77.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment78.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment79.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment80.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment81.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment82.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment83.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment84.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment85.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment86.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment87.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment88.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment89.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment90.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment91.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment92.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment93.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment94.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment95.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment96.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment97.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment98.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment99.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/main/foodapartment100.jpg" alt="inside"> </div>
-                        <div class="hard"><img src="img/com2/main/foodapartment101.jpg" alt="inside"></div>
-                        <div class="hard"><img src="img/com2/main/foodapartment102.jpg" alt="inside"></div>
-                    </div>
-                </div>
-                <div class="book2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"> <!--content-->
-                    <ul>
-                        <li>
-                            <div class="content2"> <!--book-->
-                                <ul class="front2">
-                                    <li>
-                                        <div class="frontcover2">
-                                            <img src="./img/com2/2_process_edit.jpg">
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                </ul>
-
-                                <ul class="page2">
-                                    <li></li>
-                                    <li>
-                                        <a href="#openbook2" class="btn">Open</a>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-
-                                <ul class="back2">
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                    <p style="margin-left: -25%;">Food Apartment : Process Book</p>
-                    <p class="book-notice" style="margin-left: -25%;">(Only works in Web : Chrome, Safari)</p>
-                </div>
-                <div class="openbook2">
-                    <div id="flipbook2">
-                        <div class="hard"> <img src="img/com2/process/process_edit2.jpg" alt="inside"> </div>
-                        <div class="hard"> <img src="img/com2/process/process_edit9.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit10.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit11.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit12.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit13.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit14.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit15.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit16.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit17.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit18.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit19.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit20.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit21.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit22.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit23.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit24.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit25.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit26.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit27.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit28.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit29.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit30.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit31.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit32.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit33.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit34.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit35.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit36.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit37.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit38.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit39.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit40.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit41.jpg" alt="inside"> </div>
-                        <div class="pg"> <img src="img/com2/process/process_edit42.jpg" alt="inside"> </div>
-                        <div class="hard"><img src="img/com2/process/process_edit43.jpg" alt="inside"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="right" data-aos="fade-left">
-                <div class="title">
-                    <span>Food Apartment</span>
-                    <ul>
-                        <li style="padding-bottom: 1rem">2019</li>
-                        <li>Communication Design2</li>
-                        <li>Project 2</li>
-                    </ul>
-                </div>
-                <div class="sub">
-                    <p style="padding-bottom: 2rem">Like an apartment that shows various lives, refrigerators also contain their users’ lifestyles. Inspired by this, I interviewed various types of refrigerator user groups, like "Alone Refrigerator," "Family Refrigerator," "Sharehouse Refrigerator," and "Dormitory Refrigerator”, since refrigerators can be divided into different types depending on the space or people they are used.</p>
-                </div>
-            </div>
+        <div
+          class="foodgif"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <a href="https://vimeo.com/user99603014">
+            <img src="img/com2/food_motion_1.gif" alt="For single" />
+            <img src="img/com2/food_motion_2.gif" alt="For family" />
+            <img src="img/com2/food_motion_3.gif" alt="For sharing" />
+            <img src="img/com2/food_motion_4.gif" alt="For dorm" />
+          </a>
+          <p>Motion Posters (Click)</p>
         </div>
+        <div
+          class="book-detail"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
+          <p>Interview Book : Detail pages</p>
+          <img src="img/com2/detailpages.jpg" alt="detail pages" />
+        </div>
+        <p class="book-explain">--- Enjoy the books ---</p>
+        <div
+          class="book1"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <!--content-->
+          <ul>
+            <li>
+              <div class="content">
+                <!--book-->
+                <ul class="front">
+                  <li>
+                    <div class="frontcover">
+                      <img src="./img/com2/foodapartment_front.jpg" />
+                    </div>
+                  </li>
+                  <li></li>
+                </ul>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1000,
-            });
+                <ul class="page">
+                  <li></li>
+                  <li>
+                    <a href="#openbook1" class="btn">Open</a>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
 
-            $(window).load(function() {
-                $('#loading').hide();
-            });
-        </script>
-    </body>
+                <ul class="back">
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <p>Food Apartment</p>
+          <p class="book-notice">(Only works in Web : Chrome, Safari)</p>
+        </div>
+        <div class="openbook1">
+          <div id="flipbook1">
+            <div class="hard">
+              <img src="img/com2/foodapartment_front.jpg" alt="inside" />
+            </div>
+            <div class="hard">
+              <img src="img/com2/main/foodapartment2.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment3.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment4.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment5.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment6.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment7.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment8.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment9.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment10.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment11.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment12.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment13.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment14.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment15.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment16.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment17.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment18.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment19.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment20.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment21.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment22.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment23.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment24.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment25.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment26.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment27.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment28.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment29.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment30.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment31.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment32.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment33.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment34.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment35.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment36.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment37.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment38.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment39.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment40.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment41.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment42.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment43.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment44.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment45.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment46.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment47.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment48.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment49.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment50.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment51.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment52.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment53.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment54.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment55.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment56.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment57.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment58.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment59.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment60.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment61.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment62.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment63.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment64.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment65.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment66.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment67.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment68.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment69.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment70.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment71.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment72.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment73.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment74.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment75.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment76.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment77.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment78.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment79.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment80.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment81.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment82.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment83.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment84.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment85.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment86.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment87.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment88.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment89.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment90.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment91.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment92.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment93.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment94.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment95.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment96.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment97.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment98.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment99.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/main/foodapartment100.jpg" alt="inside" />
+            </div>
+            <div class="hard">
+              <img src="img/com2/main/foodapartment101.jpg" alt="inside" />
+            </div>
+            <div class="hard">
+              <img src="img/com2/main/foodapartment102.jpg" alt="inside" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="book2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <!--content-->
+          <ul>
+            <li>
+              <div class="content2">
+                <!--book-->
+                <ul class="front2">
+                  <li>
+                    <div class="frontcover2">
+                      <img src="./img/com2/2_process_edit.jpg" />
+                    </div>
+                  </li>
+                  <li></li>
+                </ul>
+
+                <ul class="page2">
+                  <li></li>
+                  <li>
+                    <a href="#openbook2" class="btn">Open</a>
+                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+
+                <ul class="back2">
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <p style="margin-left: -25%">Food Apartment : Process Book</p>
+          <p class="book-notice" style="margin-left: -25%">
+            (Only works in Web : Chrome, Safari)
+          </p>
+        </div>
+        <div class="openbook2">
+          <div id="flipbook2">
+            <div class="hard">
+              <img src="img/com2/process/process_edit2.jpg" alt="inside" />
+            </div>
+            <div class="hard">
+              <img src="img/com2/process/process_edit9.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit10.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit11.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit12.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit13.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit14.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit15.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit16.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit17.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit18.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit19.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit20.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit21.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit22.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit23.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit24.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit25.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit26.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit27.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit28.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit29.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit30.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit31.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit32.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit33.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit34.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit35.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit36.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit37.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit38.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit39.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit40.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit41.jpg" alt="inside" />
+            </div>
+            <div class="pg">
+              <img src="img/com2/process/process_edit42.jpg" alt="inside" />
+            </div>
+            <div class="hard">
+              <img src="img/com2/process/process_edit43.jpg" alt="inside" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right" data-aos="fade-left">
+        <div class="title">
+          <span>Food Apartment</span>
+          <ul>
+            <li style="padding-bottom: 1rem">2019</li>
+            <li>Communication Design2</li>
+            <li>Project 2</li>
+          </ul>
+        </div>
+        <div class="sub">
+          <p style="padding-bottom: 2rem">
+            Like an apartment that shows various lives, refrigerators also
+            contain their users’ lifestyles. Inspired by this, I interviewed
+            various types of refrigerator user groups, like "Alone
+            Refrigerator," "Family Refrigerator," "Sharehouse Refrigerator," and
+            "Dormitory Refrigerator”, since refrigerators can be divided into
+            different types depending on the space or people they are used.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+
+      $(window).load(function () {
+        $("#loading").hide();
+      });
+    </script>
+  </body>
 </html>
