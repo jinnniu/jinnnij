@@ -1,5 +1,5 @@
 // Description section
-#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy, #inspiration {
+#con1, #con2, #ty1, #ty2, #three, #art, #jump, #full, #so1, #so2, #webzine, #real, #type, #oneday, #seoul50, #raum, #calendiary, #empathy, #inspiration, #i {
     display: grid;
     grid-template-columns: 0.9fr 0.5fr;
     grid-template-rows: 1fr;
@@ -13,7 +13,7 @@
     scrollbar-width: none; /* for Firefox */
 }
 
-.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai, .note {
+.burn, .humor, .play, .interior, .exhibition, .bungee, .picture, .moiza, .editorial, .feelings, .font, .oneweb, .intern, .raum, .calendar, .ai, .note, .i {
     display: flex;
     position: relative;
     align-items: center;
